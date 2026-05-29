@@ -3,11 +3,24 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { ingredients } from '@/data/ingredients'
 import { recipes } from '@/data/recipes'
+import { useFavoritesStore } from '@/stores/favorites'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import RecipeCard from '@/components/common/RecipeCard.vue'
 
 const route = useRoute()
+const favoritesStore = useFavoritesStore()
+
 const ingredient = computed(() => ingredients.find(i => i.id === route.params.id))
+
+const isFavorite = computed(() =>
+  ingredient.value ? favoritesStore.isIngredientFavorite(ingredient.value.id) : false,
+)
+
+function toggleFavorite() {
+  if (ingredient.value) {
+    favoritesStore.toggleIngredient(ingredient.value.id)
+  }
+}
 
 const relatedRecipes = computed(() => {
   if (!ingredient.value) return []
@@ -33,6 +46,10 @@ const relatedRecipes = computed(() => {
         <div class="detail-layout__body">
           <h1 class="detail-title">{{ ingredient.name }}</h1>
           <span class="detail-category">{{ ingredient.category }}</span>
+
+          <button class="fav-btn" :class="{ 'fav-btn--active': isFavorite }" @click="toggleFavorite">
+            {{ isFavorite ? '★ 已收藏' : '☆ 收藏' }}
+          </button>
 
           <p v-if="ingredient.alias.length" class="detail-alias">
             别名：{{ ingredient.alias.join('、') }}
@@ -107,6 +124,24 @@ const relatedRecipes = computed(() => {
   color: var(--color-primary);
   font-size: var(--font-size-note);
   margin-bottom: var(--element-gap);
+}
+
+.fav-btn {
+  display: block;
+  height: var(--btn-height);
+  padding: 0 20px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--btn-radius);
+  background: transparent;
+  color: var(--color-primary);
+  font-size: var(--font-size-body);
+  transition: all 0.2s;
+  margin-bottom: var(--element-gap);
+}
+
+.fav-btn--active {
+  background: var(--color-primary);
+  color: #fff;
 }
 
 .detail-alias {
