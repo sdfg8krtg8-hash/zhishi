@@ -26,7 +26,7 @@ export const recipes: Recipe[] = [
       { order: 5, text: '加入土豆、胡萝卜和洋葱，继续炖15分钟至土豆软烂，收汁即可。', image: PLACEHOLDER },
     ],
     tips: '牛肉先焯水可以去除血水和腥味；炖牛肉时加热水，冷水会让肉质紧缩变柴。',
-    coverImage: PLACEHOLDER,
+    coverImage: 'src/assets/images/recipes/土豆烧牛肉.png'
   },
   {
     id: 'rec-2',
@@ -49,7 +49,7 @@ export const recipes: Recipe[] = [
       { order: 4, text: '倒回炒好的鸡蛋，翻炒均匀，撒上葱花出锅。', image: PLACEHOLDER },
     ],
     tips: '番茄加少许糖可以中和酸味；鸡蛋不要炒太老，嫩滑口感最好。',
-    coverImage: PLACEHOLDER,
+    coverImage: 'src/assets/images/recipes/西红柿炒鸡蛋.png',
   },
   {
     id: 'rec-3',
@@ -74,7 +74,7 @@ export const recipes: Recipe[] = [
       { order: 5, text: '撒上葱段翻匀出锅。土豆丝炒太久会失去脆感，全程大火快炒。', image: PLACEHOLDER },
     ],
     tips: '土豆丝切好后泡水去淀粉，炒出来才脆；全程大火快炒，不超过3分钟。',
-    coverImage: PLACEHOLDER,
+    coverImage: 'src/assets/images/recipes/酸辣土豆丝.png',
   },
   {
     id: 'rec-4',
@@ -96,7 +96,7 @@ export const recipes: Recipe[] = [
       { order: 4, text: '倒回鸡蛋炒匀，加盐调味，撒葱花出锅。', image: PLACEHOLDER },
     ],
     tips: '隔夜米饭水分少，炒出来粒粒分明；炒饭时用大火，不停翻动防止粘锅。',
-    coverImage: PLACEHOLDER,
+    coverImage: 'src/assets/images/ingredients/蛋炒饭.png',
   },
   {
     id: 'rec-5',
