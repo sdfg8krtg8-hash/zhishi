@@ -1,0 +1,46 @@
+:root {
+  /* Colors */
+  --color-primary: #8B6914;
+  --color-primary-light: #C4B393;
+  --color-bg: #FBF7F0;
+  --color-card-bg: #FFFFFF;
+  --color-border: #E0D5C1;
+  --color-border-hover: #C4B393;
+  --color-text-title: #3D3226;
+  --color-text-body: #6B5E4E;
+  --color-text-muted: #9B8E7E;
+
+  /* Typography */
+  --font-family: 'Inter', 'Noto Sans SC', 'Source Han Sans CN', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-title: 28px;
+  --font-size-section: 22px;
+  --font-size-body: 16px;
+  --font-size-note: 14px;
+  --line-height-heading: 1.4;
+  --line-height-body: 1.75;
+
+  /* Spacing */
+  --page-max-width: 1200px;
+  --page-padding-x: 24px;
+  --page-padding-x-mobile: 16px;
+  --section-gap: 48px;
+  --component-gap: 24px;
+  --card-gap: 20px;
+  --element-gap: 12px;
+  --element-gap-sm: 8px;
+
+  /* Card */
+  --card-radius: 8px;
+  --card-border: 1px solid var(--color-border);
+  --card-img-ratio: 1 / 1;
+
+  /* Button */
+  --btn-radius: 4px;
+  --btn-height: 36px;
+
+  /* Navbar */
+  --navbar-height: 64px;
+
+  /* Breakpoints */
+  --bp-mobile: 768px;
+}
