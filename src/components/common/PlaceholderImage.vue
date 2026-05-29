@@ -6,18 +6,25 @@ const props = withDefaults(defineProps<{
   alt?: string
   aspectRatio?: string
 }>(), {
-  src: '/src/assets/images/placeholders/placeholder.svg',
+  src: '/images/placeholders/placeholder.svg',
   alt: '',
   aspectRatio: '1 / 1',
 })
+
+function resolvePath(path: string): string {
+  if (path.startsWith('/images/')) {
+    return import.meta.env.BASE_URL + path.slice(1)
+  }
+  return path
+}
 
 const hasError = ref(false)
 
 const computedSrc = computed(() => {
   if (hasError.value || !props.src) {
-    return '/src/assets/images/placeholders/placeholder.svg'
+    return import.meta.env.BASE_URL + 'images/placeholders/placeholder.svg'
   }
-  return props.src
+  return resolvePath(props.src)
 })
 
 function onError() {

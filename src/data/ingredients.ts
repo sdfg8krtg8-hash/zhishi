@@ -1,6 +1,6 @@
 import type { Ingredient } from '@/types/ingredient'
 
-export const PLACEHOLDER = '/src/assets/images/placeholders/placeholder.svg'
+export const PLACEHOLDER = '/images/placeholders/placeholder.svg'
 
 export const ingredients: Ingredient[] = [
   {
@@ -13,7 +13,7 @@ export const ingredients: Ingredient[] = [
     storage: '存放在阴凉通风处，避免阳光直射。不要与洋葱一起存放，两者会加速发芽。',
     pairings: ['牛肉', '青椒', '茄子', '胡萝卜'],
     relatedRecipeIds: ['rec-1', 'rec-3'],
-    image: 'src/assets/images/ingredients/土豆.png'
+    image: '/images/ingredients/土豆.png'
   },
   {
     id: 'ing-2',
@@ -25,7 +25,7 @@ export const ingredients: Ingredient[] = [
     storage: '室温存放即可，避免冰箱冷藏导致风味流失。已切开的需冷藏并在两天内食用。',
     pairings: ['鸡蛋', '牛肉', '豆腐', '洋葱'],
     relatedRecipeIds: ['rec-2'],
-    image: 'src/assets/images/ingredients/番茄.png'
+    image: '/images/ingredients/番茄.png'
   },
   {
     id: 'ing-3',
