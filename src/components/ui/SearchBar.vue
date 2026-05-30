@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div class="search-bar">
-    <svg class="search-bar__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+    <svg class="search-bar__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
       <circle cx="11" cy="11" r="8" />
       <path d="m21 21-4.35-4.35" />
     </svg>
@@ -16,6 +16,7 @@ defineProps<{
       v-model="model"
       type="text"
       class="search-bar__input"
+      aria-label="搜索"
       :placeholder="placeholder || '搜索食材或食谱...'"
     />
   </div>
