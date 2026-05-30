@@ -30,13 +30,21 @@
   --element-gap-sm: 8px;
 
   /* Card */
-  --card-radius: 8px;
+  --card-radius: 12px;
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  --card-shadow-hover: 0 4px 12px rgba(0,0,0,0.08);
+  --card-transition: all 0.2s ease;
   --card-border: 1px solid var(--color-border);
   --card-img-ratio: 1 / 1;
 
   /* Button */
   --btn-radius: 4px;
   --btn-height: 36px;
+
+  /* Search */
+  --search-radius: 20px;
+  --search-height: 40px;
+  --search-focus-glow: 0 0 0 3px rgba(139,105,20,0.1);
 
   /* Navbar */
   --navbar-height: 64px;
