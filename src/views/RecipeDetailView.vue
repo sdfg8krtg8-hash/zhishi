@@ -7,6 +7,7 @@ import { useFavoritesStore } from '@/stores/favorites'
 import { ListIcon, StepsIcon, BulbIcon } from '@/components/icons'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import Breadcrumb from '@/components/ui/Breadcrumb.vue'
+import BackButton from '@/components/ui/BackButton.vue'
 
 const route = useRoute()
 const favoritesStore = useFavoritesStore()
@@ -29,6 +30,7 @@ function toggleFavorite() {
     </div>
 
     <template v-else>
+      <BackButton />
       <Breadcrumb
         :items="[
           { label: '首页', to: '/' },

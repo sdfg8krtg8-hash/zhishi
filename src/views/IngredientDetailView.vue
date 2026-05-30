@@ -7,6 +7,7 @@ import { useFavoritesStore } from '@/stores/favorites'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import RecipeCard from '@/components/common/RecipeCard.vue'
 import Breadcrumb from '@/components/ui/Breadcrumb.vue'
+import BackButton from '@/components/ui/BackButton.vue'
 import { ListIcon, BulbIcon, StepsIcon, GridIcon } from '@/components/icons'
 
 const route = useRoute()
@@ -38,6 +39,7 @@ const relatedRecipes = computed(() => {
     </div>
 
     <template v-else>
+      <BackButton />
       <Breadcrumb
         :items="[
           { label: '首页', to: '/' },
