@@ -1,0 +1,32 @@
+# 待重新下载清单 — 已删除的不匹配图片（2026-05-30）
+# 共 27 个食材需要重新下载
+# 每行格式：食材名 | 问题描述
+
+猪肉 | Pexels: beef photo / Wikimedia: bloody butchery too graphic
+青菜 | Pexels: young seedlings not bok choy
+胡萝卜 | Pexels: soup with oranges not carrots
+豆角 | Pexels: coffee beans (Kopi Luwak) / Wikimedia: botanical drawing
+菜花 | Pexels: Gobi Manchurian cooked dish / Wikimedia: Bloemkool (ok but deleted)
+大米 | Pexels: horchata drink not rice grains / Wikimedia: ST25 rice (ok but deleted)
+番茄 | Wikimedia: unripe green tomato / Pexels: many tomatoes (ok but deleted)
+青椒 | Wikimedia: grape tomatoes mislabeled / Pexels: pie with peppers
+鸡腿 | Wikimedia: book scan (Luncheons.djvu)
+鸡胸 | Wikimedia: book scan (Gothic Gourmet.djvu) / Pexels: cooked chicken
+猪里脊 | Wikimedia: book scan (Gothic Gourmet.djvu)
+芹菜 | Wikimedia: 1906 catalog book
+大蒜 | Wikimedia: moldy garlic / Pexels: garlic bulb (ok but deleted)
+牛肉 | Wikimedia: Shenzhen shop photo / Pexels: beef on hook
+五花肉 | Wikimedia: noodle soup with octopus
+香蕉 | Wikimedia: un-ripe green bananas
+土豆 | Pexels: baked dish / Wikimedia: cross-section — both not whole potato
+豆腐 | Both: cooked dish not raw tofu block
+虾 | Both: cooked shrimp not raw
+西兰花 | Wikimedia: romanesco (wrong variety) / Pexels: broccoli (ok but deleted)
+菠菜 | Wikimedia: general plantation / Pexels: spinach leaves (timeout)
+丝瓜 | Wikimedia: sautéed dish not raw
+梨 | Wikimedia: fruit on tree bad angle
+黄瓜 | Pexels: cucumber appetizer / Wikimedia: market cucumbers (ok but deleted)
+茄子 | Pexels: eggplant salad / Wikimedia: aubergine fruits (ok but deleted)
+白菜 | Pexels: Chinatown market scene / Wikimedia: Napa cabbage (ok but deleted)
+
+# 注：标注 "ok but deleted" 的原本有可接受版本，但为了统一标准一并清理
