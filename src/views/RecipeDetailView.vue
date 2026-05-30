@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { DIFFICULTY_LABELS } from '@/types/recipe'
 import { recipes } from '@/data/recipes'
+import { ingredients } from '@/data/ingredients'
 import { useFavoritesStore } from '@/stores/favorites'
 import { ListIcon, StepsIcon, BulbIcon } from '@/components/icons'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
@@ -19,6 +20,13 @@ function toggleFavorite() {
   if (recipe.value) {
     favoritesStore.toggleRecipe(recipe.value.id)
   }
+}
+
+function findIngredientId(name: string): string | null {
+  const found = ingredients.find(
+    i => i.name === name || i.alias.some(a => a === name)
+  )
+  return found ? found.id : null
 }
 </script>
 
@@ -69,7 +77,14 @@ function toggleFavorite() {
           </thead>
           <tbody>
             <tr v-for="item in recipe.ingredients" :key="item.name">
-              <td>{{ item.name }}</td>
+              <td>
+                <router-link
+                  v-if="findIngredientId(item.name)"
+                  :to="`/ingredients/${findIngredientId(item.name)}`"
+                  class="ingredient-link"
+                >{{ item.name }}</router-link>
+                <span v-else>{{ item.name }}</span>
+              </td>
               <td>{{ item.amount }}</td>
             </tr>
           </tbody>
@@ -220,6 +235,15 @@ function toggleFavorite() {
 .step-item__text {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
+}
+
+.ingredient-link {
+  color: var(--color-primary);
+  transition: color 0.2s;
+}
+
+.ingredient-link:hover {
+  text-decoration: underline;
 }
 
 .tips-box {

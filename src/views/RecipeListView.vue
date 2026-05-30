@@ -11,9 +11,17 @@ const route = useRoute()
 const searchQuery = ref((route.query.search as string) || '')
 const selectedDifficulty = ref((route.query.difficulty as string) || '')
 const selectedCuisine = ref((route.query.cuisine as string) || '')
+const sortBy = ref('')
 
 const difficultyOptions = ['简单', '中等', '困难']
+const sortOptions = ['简单优先', '时长短→长', '时长长→短']
 const difficultyMap: Record<string, string> = { '简单': 'easy', '中等': 'medium', '困难': 'hard' }
+const difficultyOrder: Record<string, number> = { easy: 0, medium: 1, hard: 2 }
+
+function parseMinutes(duration: string): number {
+  const match = duration.match(/(\d+)/)
+  return match ? parseInt(match[1], 10) : 60
+}
 
 const filtered = computed(() => {
   let result = recipes
@@ -32,6 +40,14 @@ const filtered = computed(() => {
     result = result.filter(r => r.name.toLowerCase().includes(q))
   }
 
+  if (sortBy.value === '简单优先') {
+    result = [...result].sort((a, b) => difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty])
+  } else if (sortBy.value === '时长短→长') {
+    result = [...result].sort((a, b) => parseMinutes(a.duration) - parseMinutes(b.duration))
+  } else if (sortBy.value === '时长长→短') {
+    result = [...result].sort((a, b) => parseMinutes(b.duration) - parseMinutes(a.duration))
+  }
+
   return result
 })
 </script>
@@ -46,6 +62,11 @@ const filtered = computed(() => {
         <FilterBar v-model="selectedDifficulty" :options="difficultyOptions" label="难度" />
         <FilterBar v-model="selectedCuisine" :options="[...CUISINES]" label="菜系" />
       </div>
+    </div>
+
+    <div class="list-header">
+      <p class="list-count">共 {{ filtered.length }} 道食谱</p>
+      <FilterBar v-model="sortBy" :options="sortOptions" label="排序" />
     </div>
 
     <div v-if="filtered.length > 0" class="card-grid">
@@ -68,12 +89,26 @@ const filtered = computed(() => {
   display: flex;
   flex-direction: column;
   gap: var(--element-gap);
-  margin-bottom: var(--component-gap);
+  margin-bottom: var(--element-gap);
 }
 
 .list-filters {
   display: flex;
   flex-wrap: wrap;
   gap: var(--component-gap);
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--element-gap);
+  margin-bottom: var(--component-gap);
+}
+
+.list-count {
+  font-size: var(--font-size-note);
+  color: var(--color-text-muted);
 }
 </style>

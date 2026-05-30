@@ -3,19 +3,30 @@ import { ref, computed } from 'vue'
 import { useFavoritesStore } from '@/stores/favorites'
 import { ingredients } from '@/data/ingredients'
 import { recipes } from '@/data/recipes'
+import SearchBar from '@/components/ui/SearchBar.vue'
 import IngredientCard from '@/components/common/IngredientCard.vue'
 import RecipeCard from '@/components/common/RecipeCard.vue'
 
 const favoritesStore = useFavoritesStore()
 const activeTab = ref<'ingredients' | 'recipes'>('ingredients')
+const searchQuery = ref('')
 
-const favoriteIngredientItems = computed(() =>
-  ingredients.filter(i => favoritesStore.isIngredientFavorite(i.id)),
-)
+const favoriteIngredientItems = computed(() => {
+  const items = ingredients.filter(i => favoritesStore.isIngredientFavorite(i.id))
+  if (!searchQuery.value.trim()) return items
+  const q = searchQuery.value.trim().toLowerCase()
+  return items.filter(i =>
+    i.name.toLowerCase().includes(q) ||
+    i.alias.some(a => a.toLowerCase().includes(q))
+  )
+})
 
-const favoriteRecipeItems = computed(() =>
-  recipes.filter(r => favoritesStore.isRecipeFavorite(r.id)),
-)
+const favoriteRecipeItems = computed(() => {
+  const items = recipes.filter(r => favoritesStore.isRecipeFavorite(r.id))
+  if (!searchQuery.value.trim()) return items
+  const q = searchQuery.value.trim().toLowerCase()
+  return items.filter(r => r.name.toLowerCase().includes(q))
+})
 </script>
 
 <template>
@@ -28,18 +39,21 @@ const favoriteRecipeItems = computed(() =>
         :class="{ 'tab-btn--active': activeTab === 'ingredients' }"
         @click="activeTab = 'ingredients'"
       >
-        收藏的食材 ({{ favoriteIngredientItems.length }})
+        食材 ({{ favoriteIngredientItems.length }})
       </button>
       <button
         class="tab-btn"
         :class="{ 'tab-btn--active': activeTab === 'recipes' }"
         @click="activeTab = 'recipes'"
       >
-        收藏的食谱 ({{ favoriteRecipeItems.length }})
+        食谱 ({{ favoriteRecipeItems.length }})
       </button>
     </div>
 
-    <!-- Favorited Ingredients -->
+    <div class="fav-search">
+      <SearchBar v-model="searchQuery" :placeholder="activeTab === 'ingredients' ? '搜索收藏的食材...' : '搜索收藏的食谱...'" />
+    </div>
+
     <div v-if="activeTab === 'ingredients'">
       <div v-if="favoriteIngredientItems.length > 0" class="card-grid">
         <IngredientCard v-for="item in favoriteIngredientItems" :key="item.id" :ingredient="item" />
@@ -53,7 +67,6 @@ const favoriteRecipeItems = computed(() =>
       </div>
     </div>
 
-    <!-- Favorited Recipes -->
     <div v-if="activeTab === 'recipes'">
       <div v-if="favoriteRecipeItems.length > 0" class="card-grid">
         <RecipeCard v-for="item in favoriteRecipeItems" :key="item.id" :recipe="item" />
@@ -73,7 +86,7 @@ const favoriteRecipeItems = computed(() =>
 .tabs {
   display: flex;
   gap: var(--element-gap-sm);
-  margin-bottom: var(--component-gap);
+  margin-bottom: var(--element-gap);
 }
 
 .tab-btn {
@@ -85,12 +98,19 @@ const favoriteRecipeItems = computed(() =>
   color: var(--color-text-body);
   font-size: var(--font-size-body);
   transition: all 0.2s;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .tab-btn--active {
   background: var(--color-primary);
   border-color: var(--color-primary);
   color: #fff;
+}
+
+.fav-search {
+  max-width: 420px;
+  margin-bottom: var(--component-gap);
 }
 
 .empty-state__link {

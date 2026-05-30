@@ -44,6 +44,7 @@ const filtered = computed(() => {
       />
     </div>
 
+    <p class="list-count">共 {{ filtered.length }} 种食材</p>
     <div v-if="filtered.length > 0" class="card-grid">
       <IngredientCard v-for="item in filtered" :key="item.id" :ingredient="item" />
     </div>
@@ -64,6 +65,12 @@ const filtered = computed(() => {
   display: flex;
   flex-direction: column;
   gap: var(--element-gap);
+  margin-bottom: var(--element-gap);
+}
+
+.list-count {
+  font-size: var(--font-size-note);
+  color: var(--color-text-muted);
   margin-bottom: var(--component-gap);
 }
 </style>
