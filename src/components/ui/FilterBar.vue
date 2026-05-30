@@ -53,15 +53,17 @@ const selected = defineModel<string>({ default: '' })
   color: var(--color-text-body);
   font-size: var(--font-size-note);
   transition: all 0.2s;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .filter-bar__btn:hover {
-  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .filter-bar__btn--active {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #fff;
+  background: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  color: var(--color-text-title);
 }
 </style>

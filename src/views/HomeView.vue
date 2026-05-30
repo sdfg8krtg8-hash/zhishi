@@ -78,6 +78,10 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
   text-decoration: none;
 }
 
+.category-item:hover .category-item__text {
+  color: var(--color-primary);
+}
+
 .category-item__text {
   font-size: var(--font-size-body);
   color: var(--color-text-body);
