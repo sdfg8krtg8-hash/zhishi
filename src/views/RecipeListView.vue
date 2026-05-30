@@ -20,7 +20,7 @@ const difficultyOrder: Record<string, number> = { easy: 0, medium: 1, hard: 2 }
 
 function parseMinutes(duration: string): number {
   const match = duration.match(/(\d+)/)
-  return match ? parseInt(match[1], 10) : 60
+  return match?.[1] ? parseInt(match[1], 10) : 60
 }
 
 const filtered = computed(() => {
@@ -41,7 +41,7 @@ const filtered = computed(() => {
   }
 
   if (sortBy.value === '简单优先') {
-    result = [...result].sort((a, b) => difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty])
+    result = [...result].sort((a, b) => (difficultyOrder[a.difficulty] ?? 0) - (difficultyOrder[b.difficulty] ?? 0))
   } else if (sortBy.value === '时长短→长') {
     result = [...result].sort((a, b) => parseMinutes(a.duration) - parseMinutes(b.duration))
   } else if (sortBy.value === '时长长→短') {
