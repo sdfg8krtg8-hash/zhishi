@@ -37,7 +37,7 @@ export const ingredients: Ingredient[] = [
     storage: '大头朝上冷藏保存，可延长保鲜期。使用前取出回温效果更佳。',
     pairings: ['番茄', '韭菜', '虾仁', '面粉'],
     relatedRecipeIds: ['rec-2', 'rec-4'],
-    image: PLACEHOLDER
+    image: '/images/ingredients/鸡蛋.jpg'
   },
   {
     id: 'ing-4',
@@ -49,7 +49,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。分装冷冻，解冻后不宜再次冷冻。',
     pairings: ['蒜苗', '青椒', '土豆', '白菜'],
     relatedRecipeIds: ['rec-1', 'rec-5'],
-    image: PLACEHOLDER
+    image: '/images/ingredients/猪肉.jpg'
   },
   {
     id: 'ing-5',
@@ -61,7 +61,7 @@ export const ingredients: Ingredient[] = [
     storage: '用清水浸泡，放入冰箱冷藏，每天换水可保存2-3天。',
     pairings: ['葱', '肉末', '虾仁', '青菜'],
     relatedRecipeIds: ['rec-5'],
-    image: PLACEHOLDER
+    image: '/images/ingredients/豆腐.jpg'
   },
   {
     id: 'ing-6',
@@ -73,7 +73,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可放入冰箱冷藏防虫。',
     pairings: ['各种蔬菜', '各种肉类', '鸡蛋'],
     relatedRecipeIds: ['rec-4'],
-    image: PLACEHOLDER
+    image: '/images/ingredients/大米.jpg'
   },
   {
     id: 'ing-7',
@@ -85,7 +85,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放入冰箱冷藏，尽快食用，不宜存放超过3天。',
     pairings: ['香菇', '蒜', '豆腐', '虾皮'],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/青菜.jpg'
   },
   {
     id: 'ing-8',
@@ -97,7 +97,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜虾去虾线后冷藏1-2天，或去头去壳冷冻保存，解冻后尽快烹饪。',
     pairings: ['鸡蛋', '豆腐', '葱姜', '西兰花'],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/虾.jpg'
   },
   {
     id: 'ing-9',
@@ -109,7 +109,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/白菜.jpg'
   },
   {
     id: 'ing-10',
@@ -121,7 +121,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/黄瓜.jpg'
   },
   {
     id: 'ing-11',
@@ -133,7 +133,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/胡萝卜.jpg'
   },
   {
     id: 'ing-12',
@@ -145,7 +145,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/茄子.jpg'
   },
   {
     id: 'ing-13',
@@ -157,7 +157,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/豆角.jpg'
   },
   {
     id: 'ing-14',
@@ -169,7 +169,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/青椒.jpg'
   },
   {
     id: 'ing-15',
@@ -181,7 +181,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/辣椒.jpg'
   },
   {
     id: 'ing-16',
@@ -193,7 +193,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/西兰花.jpg'
   },
   {
     id: 'ing-17',
@@ -205,7 +205,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/菜花.jpg'
   },
   {
     id: 'ing-18',
@@ -217,7 +217,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/菠菜.jpg'
   },
   {
     id: 'ing-19',
@@ -241,7 +241,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/油麦菜.jpg'
   },
   {
     id: 'ing-21',
@@ -253,7 +253,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/芹菜.jpg'
   },
   {
     id: 'ing-22',
@@ -265,7 +265,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/韭菜.jpg'
   },
   {
     id: 'ing-23',
@@ -277,7 +277,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/洋葱.jpg'
   },
   {
     id: 'ing-24',
@@ -289,7 +289,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/大蒜.jpg'
   },
   {
     id: 'ing-25',
@@ -301,7 +301,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/生姜.jpg'
   },
   {
     id: 'ing-26',
@@ -313,7 +313,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/大葱.jpg'
   },
   {
     id: 'ing-27',
@@ -325,7 +325,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/莲藕.jpg'
   },
   {
     id: 'ing-28',
@@ -337,7 +337,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/山药.jpg'
   },
   {
     id: 'ing-29',
@@ -349,7 +349,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/芋头.jpg'
   },
   {
     id: 'ing-30',
@@ -361,7 +361,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/冬瓜.jpg'
   },
   {
     id: 'ing-31',
@@ -373,7 +373,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/南瓜.jpg'
   },
   {
     id: 'ing-32',
@@ -385,7 +385,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/丝瓜.jpg'
   },
   {
     id: 'ing-33',
@@ -397,7 +397,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/苦瓜.jpg'
   },
   {
     id: 'ing-34',
@@ -409,7 +409,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/西葫芦.jpg'
   },
   {
     id: 'ing-35',
@@ -421,7 +421,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/空心菜.jpg'
   },
   {
     id: 'ing-36',
@@ -433,7 +433,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/茼蒿.jpg'
   },
   {
     id: 'ing-37',
@@ -445,7 +445,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/娃娃菜.jpg'
   },
   {
     id: 'ing-38',
@@ -457,7 +457,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/上海青.jpg'
   },
   {
     id: 'ing-39',
@@ -469,7 +469,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/油菜.jpg'
   },
   {
     id: 'ing-40',
@@ -481,7 +481,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/莴笋.jpg'
   },
   {
     id: 'ing-41',
@@ -493,7 +493,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/茭白.jpg'
   },
   {
     id: 'ing-42',
@@ -505,7 +505,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/芦笋.jpg'
   },
   {
     id: 'ing-43',
@@ -517,7 +517,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/香椿.jpg'
   },
   {
     id: 'ing-44',
@@ -529,7 +529,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/毛豆.jpg'
   },
   {
     id: 'ing-45',
@@ -541,7 +541,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/四季豆.jpg'
   },
   {
     id: 'ing-46',
@@ -553,7 +553,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/荷兰豆.jpg'
   },
   {
     id: 'ing-47',
@@ -565,7 +565,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/豌豆.jpg'
   },
   {
     id: 'ing-48',
@@ -577,7 +577,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/豆芽.jpg'
   },
   {
     id: 'ing-49',
@@ -589,7 +589,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/海带.jpg'
   },
   {
     id: 'ing-50',
@@ -601,7 +601,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/紫菜.jpg'
   },
   {
     id: 'ing-51',
@@ -613,7 +613,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/苹果.jpg'
   },
   {
     id: 'ing-52',
@@ -625,7 +625,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/香蕉.jpg'
   },
   {
     id: 'ing-53',
@@ -637,7 +637,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/橙子.jpg'
   },
   {
     id: 'ing-54',
@@ -649,7 +649,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/橘子.jpg'
   },
   {
     id: 'ing-55',
@@ -661,7 +661,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/柚子.jpg'
   },
   {
     id: 'ing-56',
@@ -673,7 +673,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/柠檬.jpg'
   },
   {
     id: 'ing-57',
@@ -685,7 +685,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/草莓.jpg'
   },
   {
     id: 'ing-58',
@@ -697,7 +697,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/蓝莓.jpg'
   },
   {
     id: 'ing-59',
@@ -709,7 +709,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/芒果.jpg'
   },
   {
     id: 'ing-60',
@@ -721,7 +721,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/葡萄.jpg'
   },
   {
     id: 'ing-61',
@@ -733,7 +733,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/西瓜.jpg'
   },
   {
     id: 'ing-62',
@@ -745,7 +745,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/哈密瓜.jpg'
   },
   {
     id: 'ing-63',
@@ -757,7 +757,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/桃子.jpg'
   },
   {
     id: 'ing-64',
@@ -769,7 +769,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/李子.jpg'
   },
   {
     id: 'ing-65',
@@ -781,7 +781,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: '/images/ingredients/梨.jpg'
   },
   {
     id: 'ing-66',

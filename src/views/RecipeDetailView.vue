@@ -5,6 +5,7 @@ import { DIFFICULTY_LABELS } from '@/types/recipe'
 import { recipes } from '@/data/recipes'
 import { useFavoritesStore } from '@/stores/favorites'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
+import Breadcrumb from '@/components/ui/Breadcrumb.vue'
 
 const route = useRoute()
 const favoritesStore = useFavoritesStore()
@@ -27,7 +28,13 @@ function toggleFavorite() {
     </div>
 
     <template v-else>
-      <router-link to="/recipes" class="back-link">&larr; 返回食谱列表</router-link>
+      <Breadcrumb
+        :items="[
+          { label: '首页', to: '/' },
+          { label: '食谱列表', to: '/recipes' },
+          { label: recipe.name },
+        ]"
+      />
 
       <!-- Cover image -->
       <div class="cover-image">
@@ -103,6 +110,7 @@ function toggleFavorite() {
 
 .cover-image {
   max-width: 100%;
+  max-height: 480px;
   margin-bottom: var(--component-gap);
   border-radius: var(--card-radius);
   overflow: hidden;

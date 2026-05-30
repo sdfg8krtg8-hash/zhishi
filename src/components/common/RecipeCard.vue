@@ -13,7 +13,7 @@ defineProps<{
     <PlaceholderImage
       :src="recipe.coverImage"
       :alt="recipe.name"
-      aspect-ratio="1 / 1"
+      aspect-ratio="260 / 200"
     />
     <div class="recipe-card__info">
       <h3 class="recipe-card__name">{{ recipe.name }}</h3>
@@ -29,6 +29,7 @@ defineProps<{
 .recipe-card {
   display: flex;
   flex-direction: column;
+  width: 260px;
   background: var(--color-card-bg);
   border: var(--card-border);
   border-radius: var(--card-radius);

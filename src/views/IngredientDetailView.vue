@@ -6,6 +6,7 @@ import { recipes } from '@/data/recipes'
 import { useFavoritesStore } from '@/stores/favorites'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import RecipeCard from '@/components/common/RecipeCard.vue'
+import Breadcrumb from '@/components/ui/Breadcrumb.vue'
 
 const route = useRoute()
 const favoritesStore = useFavoritesStore()
@@ -36,7 +37,13 @@ const relatedRecipes = computed(() => {
     </div>
 
     <template v-else>
-      <router-link to="/ingredients" class="back-link">&larr; 返回食材列表</router-link>
+      <Breadcrumb
+        :items="[
+          { label: '首页', to: '/' },
+          { label: '食材列表', to: '/ingredients' },
+          { label: ingredient.name },
+        ]"
+      />
 
       <div class="detail-layout">
         <div class="detail-layout__image">
