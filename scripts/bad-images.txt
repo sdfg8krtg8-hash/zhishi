@@ -2,6 +2,7 @@
 # 共 27 个食材需要重新下载
 # 每行格式：食材名 | 问题描述
 
+苹果 | Wikimedia: Malus pumila young fruit on tree, not ripe apple
 猪肉 | Pexels: beef photo / Wikimedia: bloody butchery too graphic
 青菜 | Pexels: young seedlings not bok choy
 胡萝卜 | Pexels: soup with oranges not carrots

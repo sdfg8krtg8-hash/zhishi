@@ -13,7 +13,7 @@ export const ingredients: Ingredient[] = [
     storage: '存放在阴凉通风处，避免阳光直射。不要与洋葱一起存放，两者会加速发芽。',
     pairings: ['牛肉', '青椒', '茄子', '胡萝卜'],
     relatedRecipeIds: ['rec-1', 'rec-3'],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-2',
@@ -25,7 +25,7 @@ export const ingredients: Ingredient[] = [
     storage: '室温存放即可，避免冰箱冷藏导致风味流失。已切开的需冷藏并在两天内食用。',
     pairings: ['鸡蛋', '牛肉', '豆腐', '洋葱'],
     relatedRecipeIds: ['rec-2'],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-3',
@@ -49,7 +49,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。分装冷冻，解冻后不宜再次冷冻。',
     pairings: ['蒜苗', '青椒', '土豆', '白菜'],
     relatedRecipeIds: ['rec-1', 'rec-5'],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-5',
@@ -61,7 +61,7 @@ export const ingredients: Ingredient[] = [
     storage: '用清水浸泡，放入冰箱冷藏，每天换水可保存2-3天。',
     pairings: ['葱', '肉末', '虾仁', '青菜'],
     relatedRecipeIds: ['rec-5'],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-6',
@@ -73,7 +73,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可放入冰箱冷藏防虫。',
     pairings: ['各种蔬菜', '各种肉类', '鸡蛋'],
     relatedRecipeIds: ['rec-4'],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-7',
@@ -85,7 +85,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放入冰箱冷藏，尽快食用，不宜存放超过3天。',
     pairings: ['香菇', '蒜', '豆腐', '虾皮'],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-8',
@@ -97,7 +97,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜虾去虾线后冷藏1-2天，或去头去壳冷冻保存，解冻后尽快烹饪。',
     pairings: ['鸡蛋', '豆腐', '葱姜', '西兰花'],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-9',
@@ -109,7 +109,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-10',
@@ -121,7 +121,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-11',
@@ -133,7 +133,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-12',
@@ -145,7 +145,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-13',
@@ -157,7 +157,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-14',
@@ -169,7 +169,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-15',
@@ -193,7 +193,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-17',
@@ -205,7 +205,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-18',
@@ -217,7 +217,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-19',
@@ -241,7 +241,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/油麦菜.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-21',
@@ -253,7 +253,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-22',
@@ -265,7 +265,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/韭菜.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-23',
@@ -289,7 +289,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-25',
@@ -337,7 +337,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/山药.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-29',
@@ -349,7 +349,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/芋头.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-30',
@@ -385,7 +385,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-33',
@@ -421,7 +421,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/空心菜.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-36',
@@ -433,7 +433,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/茼蒿.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-37',
@@ -445,7 +445,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/娃娃菜.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-38',
@@ -457,7 +457,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/上海青.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-39',
@@ -469,7 +469,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/油菜.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-40',
@@ -481,7 +481,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/莴笋.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-41',
@@ -493,7 +493,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/茭白.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-42',
@@ -505,7 +505,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/芦笋.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-43',
@@ -517,7 +517,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/香椿.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-44',
@@ -529,7 +529,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/毛豆.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-45',
@@ -553,7 +553,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/荷兰豆.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-47',
@@ -565,7 +565,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豌豆.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-48',
@@ -589,7 +589,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/海带.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-50',
@@ -601,7 +601,7 @@ export const ingredients: Ingredient[] = [
     storage: '用保鲜袋包好放冰箱冷藏，绿叶蔬菜尽快在2-3天内食用。根茎类可放阴凉通风处保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/紫菜.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-51',
@@ -613,7 +613,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/苹果.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-52',
@@ -625,7 +625,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-53',
@@ -745,7 +745,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/哈密瓜.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-63',
@@ -757,7 +757,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/桃子.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-64',
@@ -781,7 +781,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-66',
@@ -793,7 +793,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/樱桃.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-67',
@@ -865,7 +865,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/榴莲.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-73',
@@ -877,7 +877,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/山竹.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-74',
@@ -901,7 +901,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/龙眼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-76',
@@ -913,7 +913,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/杨梅.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-77',
@@ -925,7 +925,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/枇杷.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-78',
@@ -961,7 +961,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/牛油果.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-81',
@@ -997,7 +997,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/蔓越莓.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-84',
@@ -1033,7 +1033,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/甘蔗.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-87',
@@ -1045,7 +1045,7 @@ export const ingredients: Ingredient[] = [
     storage: '大部分水果室温存放即可，热带水果不宜冷藏。已切开的水果需冷藏并尽快食用。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/荸荠.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-88',
@@ -1057,7 +1057,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-89',
@@ -1069,7 +1069,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-90',
@@ -1081,7 +1081,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/排骨.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-91',
@@ -1093,7 +1093,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/猪蹄.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-92',
@@ -1105,7 +1105,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/猪肘.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-93',
@@ -1117,7 +1117,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/猪肝.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-94',
@@ -1129,7 +1129,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/猪心.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-95',
@@ -1141,7 +1141,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/猪肚.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-96',
@@ -1153,7 +1153,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/猪大肠.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-97',
@@ -1165,7 +1165,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/牛腩.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-98',
@@ -1201,7 +1201,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/牛里脊.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-101',
@@ -1213,7 +1213,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/牛骨.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-102',
@@ -1237,7 +1237,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/羊腿.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-104',
@@ -1249,7 +1249,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/羊蝎子.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-105',
@@ -1261,7 +1261,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/羊肉卷.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-106',
@@ -1273,7 +1273,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-107',
@@ -1285,7 +1285,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-108',
@@ -1297,7 +1297,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: PLACEHOLDER
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-109',
@@ -1309,7 +1309,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸡爪.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-110',
@@ -1321,7 +1321,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸡架.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-111',
@@ -1333,7 +1333,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/整鸡.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-112',
@@ -1345,7 +1345,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸭腿.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-113',
@@ -1357,7 +1357,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸭脖.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-114',
@@ -1369,7 +1369,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸭翅.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-115',
@@ -1381,7 +1381,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸭掌.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-116',
@@ -1393,7 +1393,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/整鸭.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-117',
@@ -1405,7 +1405,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鹅肉.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-118',
@@ -1417,7 +1417,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/兔肉.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-119',
@@ -1429,7 +1429,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/驴肉.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-120',
@@ -1441,7 +1441,7 @@ export const ingredients: Ingredient[] = [
     storage: '冷藏可保存1-2天，冷冻可保存1-3个月。建议按用量分装冷冻，解冻后不宜再次冷冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鹿肉.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-121',
@@ -1453,7 +1453,7 @@ export const ingredients: Ingredient[] = [
     storage: '大头朝上放入冰箱冷藏保存。使用前取出回温，口感更佳。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸭蛋.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-122',
@@ -1465,7 +1465,7 @@ export const ingredients: Ingredient[] = [
     storage: '大头朝上放入冰箱冷藏保存。使用前取出回温，口感更佳。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鹅蛋.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-123',
@@ -1489,7 +1489,7 @@ export const ingredients: Ingredient[] = [
     storage: '大头朝上放入冰箱冷藏保存。使用前取出回温，口感更佳。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/皮蛋.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-125',
@@ -1501,7 +1501,7 @@ export const ingredients: Ingredient[] = [
     storage: '大头朝上放入冰箱冷藏保存。使用前取出回温，口感更佳。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/咸鸭蛋.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-126',
@@ -1513,7 +1513,7 @@ export const ingredients: Ingredient[] = [
     storage: '大头朝上放入冰箱冷藏保存。使用前取出回温，口感更佳。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/卤蛋.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-127',
@@ -1525,7 +1525,7 @@ export const ingredients: Ingredient[] = [
     storage: '大头朝上放入冰箱冷藏保存。使用前取出回温，口感更佳。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/茶叶蛋.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-128',
@@ -1549,7 +1549,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鲤鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-130',
@@ -1561,7 +1561,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鲫鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-131',
@@ -1573,7 +1573,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鲈鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-132',
@@ -1585,7 +1585,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鳕鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-133',
@@ -1597,7 +1597,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/带鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-134',
@@ -1609,7 +1609,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/黄花鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-135',
@@ -1621,7 +1621,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/三文鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-136',
@@ -1633,7 +1633,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/巴沙鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-137',
@@ -1645,7 +1645,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/龙利鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-138',
@@ -1657,7 +1657,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鲶鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-139',
@@ -1669,7 +1669,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/黑鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-140',
@@ -1681,7 +1681,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/基围虾.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-141',
@@ -1693,7 +1693,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/明虾.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-142',
@@ -1705,7 +1705,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/河虾.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-143',
@@ -1717,7 +1717,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/小龙虾.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-144',
@@ -1729,7 +1729,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/皮皮虾.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-145',
@@ -1741,7 +1741,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/大闸蟹.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-146',
@@ -1753,7 +1753,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/梭子蟹.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-147',
@@ -1765,7 +1765,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/面包蟹.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-148',
@@ -1777,7 +1777,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/花甲.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-149',
@@ -1789,7 +1789,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/蛏子.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-150',
@@ -1801,7 +1801,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/生蚝.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-151',
@@ -1813,7 +1813,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/扇贝.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-152',
@@ -1825,7 +1825,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/蛤蜊.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-153',
@@ -1837,7 +1837,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/蚬子.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-154',
@@ -1849,7 +1849,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鱿鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-155',
@@ -1861,7 +1861,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/墨鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-156',
@@ -1873,7 +1873,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/章鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-157',
@@ -1885,7 +1885,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/八爪鱼.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-158',
@@ -1909,7 +1909,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/泥鳅.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-160',
@@ -1921,7 +1921,7 @@ export const ingredients: Ingredient[] = [
     storage: '鲜活水产建议当天食用。处理后用保鲜袋密封冷藏，尽快烹饪。冷冻品解冻后不宜再冻。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/黄鳝.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-161',
@@ -1933,7 +1933,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/嫩豆腐.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-162',
@@ -1945,7 +1945,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/老豆腐.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-163',
@@ -1957,7 +1957,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/北豆腐.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-164',
@@ -1969,7 +1969,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/南豆腐.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-165',
@@ -1981,7 +1981,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豆干.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-166',
@@ -1993,7 +1993,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/千页豆腐.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-167',
@@ -2005,7 +2005,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/腐竹.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-168',
@@ -2017,7 +2017,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豆皮.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-169',
@@ -2029,7 +2029,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豆油皮.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-170',
@@ -2041,7 +2041,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豆腐皮.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-171',
@@ -2053,7 +2053,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/油豆腐.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-172',
@@ -2065,7 +2065,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豆泡.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-173',
@@ -2077,7 +2077,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/素鸡.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-174',
@@ -2089,7 +2089,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/素火腿.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-175',
@@ -2101,7 +2101,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豆浆.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-176',
@@ -2113,7 +2113,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豆腐脑.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-177',
@@ -2125,7 +2125,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豆豉.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-178',
@@ -2137,7 +2137,7 @@ export const ingredients: Ingredient[] = [
     storage: '新鲜豆制品用清水浸泡冷藏，每天换水可保存2-3天。干制品密封常温存放。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/纳豆.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-179',
@@ -2149,7 +2149,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/香菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-180',
@@ -2161,7 +2161,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/金针菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-181',
@@ -2173,7 +2173,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/杏鲍菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-182',
@@ -2185,7 +2185,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/木耳.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-183',
@@ -2197,7 +2197,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/银耳.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-184',
@@ -2209,7 +2209,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/平菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-185',
@@ -2221,7 +2221,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/口蘑.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-186',
@@ -2233,7 +2233,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/蟹味菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-187',
@@ -2245,7 +2245,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/白玉菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-188',
@@ -2257,7 +2257,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/茶树菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-189',
@@ -2269,7 +2269,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/猴头菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-190',
@@ -2281,7 +2281,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/竹荪.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-191',
@@ -2293,7 +2293,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/牛肝菌.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-192',
@@ -2305,7 +2305,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/羊肚菌.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-193',
@@ -2317,7 +2317,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸡枞菌.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-194',
@@ -2329,7 +2329,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/松茸.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-195',
@@ -2341,7 +2341,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/松露.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-196',
@@ -2353,7 +2353,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸡腿菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-197',
@@ -2365,7 +2365,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/草菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-198',
@@ -2377,7 +2377,7 @@ export const ingredients: Ingredient[] = [
     storage: '用纸袋或透气保鲜袋包好冷藏，尽快在3天内食用。干菌菇密封常温保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/凤尾菇.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-199',
@@ -2413,7 +2413,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/酱油.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-202',
@@ -2425,7 +2425,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/生抽.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-203',
@@ -2437,7 +2437,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/老抽.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-204',
@@ -2449,7 +2449,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/蚝油.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-205',
@@ -2461,7 +2461,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/醋.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-206',
@@ -2473,7 +2473,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/料酒.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-207',
@@ -2485,7 +2485,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/鸡精.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-208',
@@ -2497,7 +2497,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/味精.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-209',
@@ -2509,7 +2509,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/胡椒粉.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-210',
@@ -2521,7 +2521,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/花椒.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-211',
@@ -2533,7 +2533,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/八角.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-212',
@@ -2557,7 +2557,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/香叶.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-214',
@@ -2569,7 +2569,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/干辣椒.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-215',
@@ -2593,7 +2593,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/麻椒.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-217',
@@ -2605,7 +2605,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/孜然.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-218',
@@ -2617,7 +2617,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/五香粉.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-219',
@@ -2629,7 +2629,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/十三香.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-220',
@@ -2641,7 +2641,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/豆瓣酱.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-221',
@@ -2653,7 +2653,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/黄豆酱.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-222',
@@ -2689,7 +2689,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/番茄酱.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-225',
@@ -2701,7 +2701,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/沙拉酱.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-226',
@@ -2725,7 +2725,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/芝麻酱.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-228',
@@ -2749,7 +2749,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/香油.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-230',
@@ -2761,7 +2761,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/辣椒油.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-231',
@@ -2773,7 +2773,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/花椒油.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-232',
@@ -2785,7 +2785,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/火锅底料.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-233',
@@ -2797,7 +2797,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，避免受潮和阳光直射。部分酱料开封后需冷藏保存。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/咖喱块.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-234',
@@ -2809,7 +2809,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/小米.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-235',
@@ -2821,7 +2821,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/糯米.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-236',
@@ -2833,7 +2833,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/黑米.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-237',
@@ -2845,7 +2845,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/糙米.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-238',
@@ -2857,7 +2857,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/面条.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-239',
@@ -2869,7 +2869,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/挂面.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-240',
@@ -2881,7 +2881,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/方便面.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-241',
@@ -2893,7 +2893,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/意大利面.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-242',
@@ -2905,7 +2905,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/通心粉.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-243',
@@ -2917,7 +2917,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/荞麦面.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-244',
@@ -2929,7 +2929,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/玉米面.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-245',
@@ -2941,7 +2941,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/面粉.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-246',
@@ -2953,7 +2953,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/饺子皮.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-247',
@@ -2965,7 +2965,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/馄饨皮.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-248',
@@ -2977,7 +2977,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/包子皮.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-249',
@@ -2989,7 +2989,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/馒头.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-250',
@@ -3001,7 +3001,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/花卷.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-251',
@@ -3025,7 +3025,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/油条.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-253',
@@ -3049,7 +3049,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/饺子.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-255',
@@ -3061,7 +3061,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/馄饨.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-256',
@@ -3073,7 +3073,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/烧麦.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-257',
@@ -3097,7 +3097,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/红薯.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-259',
@@ -3109,7 +3109,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/紫薯.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-260',
@@ -3133,7 +3133,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/藜麦.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-262',
@@ -3145,7 +3145,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/红豆.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-263',
@@ -3157,7 +3157,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/绿豆.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-264',
@@ -3169,7 +3169,7 @@ export const ingredients: Ingredient[] = [
     storage: '密封存放于阴凉干燥处，夏季可冷藏防虫。面食类速冻保存，食用时加热即可。',
     pairings: [],
     relatedRecipeIds: [],
-    image: '/images/ingredients/芸豆.jpg'
+    image: 'PLACEHOLDER'
   },
   {
     id: 'ing-265',
