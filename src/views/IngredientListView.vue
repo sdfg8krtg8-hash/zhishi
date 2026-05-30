@@ -49,8 +49,12 @@ const filtered = computed(() => {
     </div>
 
     <div v-else class="empty-state">
-      <div class="empty-state__icon"></div>
-      <p class="empty-state__text">没有找到匹配的食材</p>
+      <svg class="empty-state__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <circle cx="11" cy="11" r="8" />
+        <path d="m21 21-4.35-4.35" />
+        <line x1="8" y1="11" x2="14" y2="11" />
+      </svg>
+      <p class="empty-state__text">未找到相关内容，试试其他关键词</p>
     </div>
   </div>
 </template>

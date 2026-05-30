@@ -45,8 +45,10 @@ const favoriteRecipeItems = computed(() =>
         <IngredientCard v-for="item in favoriteIngredientItems" :key="item.id" :ingredient="item" />
       </div>
       <div v-else class="empty-state">
-        <div class="empty-state__icon"></div>
-        <p class="empty-state__text">暂无收藏的食材</p>
+        <svg class="empty-state__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+        </svg>
+        <p class="empty-state__text">还没有收藏的食材</p>
         <router-link to="/ingredients" class="empty-state__link">去食材列表看看</router-link>
       </div>
     </div>
@@ -57,8 +59,10 @@ const favoriteRecipeItems = computed(() =>
         <RecipeCard v-for="item in favoriteRecipeItems" :key="item.id" :recipe="item" />
       </div>
       <div v-else class="empty-state">
-        <div class="empty-state__icon"></div>
-        <p class="empty-state__text">暂无收藏的食谱</p>
+        <svg class="empty-state__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+        </svg>
+        <p class="empty-state__text">还没有收藏的食谱</p>
         <router-link to="/recipes" class="empty-state__link">去食谱列表看看</router-link>
       </div>
     </div>
