@@ -8,11 +8,9 @@ import BackToTop from '@/components/ui/BackToTop.vue'
   <AppNavbar />
   <main>
     <router-view v-slot="{ Component }">
-      <router-view v-slot="{ Component }">
-        <transition name="fade">
-          <component :is="Component" />
-        </transition>
-      </router-view>
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
     </router-view>
   </main>
   <AppFooter />
