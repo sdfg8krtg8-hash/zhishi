@@ -7,6 +7,7 @@ import { useFavoritesStore } from '@/stores/favorites'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import RecipeCard from '@/components/common/RecipeCard.vue'
 import Breadcrumb from '@/components/ui/Breadcrumb.vue'
+import { ListIcon, BulbIcon, StepsIcon, GridIcon } from '@/components/icons'
 
 const route = useRoute()
 const favoritesStore = useFavoritesStore()
@@ -63,22 +64,22 @@ const relatedRecipes = computed(() => {
           </p>
 
           <section class="detail-section">
-            <h2 class="detail-section__title">简介</h2>
+            <h2 class="detail-section__title"><BulbIcon /> 简介</h2>
             <p>{{ ingredient.description }}</p>
           </section>
 
           <section class="detail-section">
-            <h2 class="detail-section__title">选购技巧</h2>
+            <h2 class="detail-section__title"><StepsIcon /> 选购技巧</h2>
             <p>{{ ingredient.tips }}</p>
           </section>
 
           <section class="detail-section">
-            <h2 class="detail-section__title">保存方法</h2>
+            <h2 class="detail-section__title"><GridIcon /> 保存方法</h2>
             <p>{{ ingredient.storage }}</p>
           </section>
 
           <section v-if="ingredient.pairings.length" class="detail-section">
-            <h2 class="detail-section__title">搭配食材</h2>
+            <h2 class="detail-section__title"><ListIcon /> 搭配食材</h2>
             <div class="pairing-tags">
               <span v-for="p in ingredient.pairings" :key="p" class="pairing-tag">{{ p }}</span>
             </div>

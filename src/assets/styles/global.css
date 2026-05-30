@@ -17,6 +17,17 @@
   margin-bottom: var(--component-gap);
 }
 
+.section-title--icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title--icon svg {
+  flex-shrink: 0;
+  color: var(--color-primary-light);
+}
+
 /* Card grid layout */
 .card-grid {
   display: grid;

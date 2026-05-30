@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router'
 import { DIFFICULTY_LABELS } from '@/types/recipe'
 import { recipes } from '@/data/recipes'
 import { useFavoritesStore } from '@/stores/favorites'
+import { ListIcon, StepsIcon, BulbIcon } from '@/components/icons'
 import PlaceholderImage from '@/components/common/PlaceholderImage.vue'
 import Breadcrumb from '@/components/ui/Breadcrumb.vue'
 
@@ -56,7 +57,7 @@ function toggleFavorite() {
 
       <!-- Ingredients -->
       <section class="detail-section">
-        <h2 class="section-title">食材清单</h2>
+        <h2 class="section-title section-title--icon"><ListIcon /> 食材清单</h2>
         <table class="ingredient-table">
           <thead>
             <tr>
@@ -75,7 +76,7 @@ function toggleFavorite() {
 
       <!-- Steps -->
       <section class="detail-section">
-        <h2 class="section-title">烹饪步骤</h2>
+        <h2 class="section-title section-title--icon"><StepsIcon /> 烹饪步骤</h2>
         <div class="steps-list">
           <div v-for="step in recipe.steps" :key="step.order" class="step-item">
             <div class="step-item__image">
@@ -91,7 +92,7 @@ function toggleFavorite() {
 
       <!-- Tips -->
       <section class="detail-section">
-        <h2 class="section-title">新手贴士</h2>
+        <h2 class="section-title section-title--icon"><BulbIcon /> 新手贴士</h2>
         <div class="tips-box">
           <p>{{ recipe.tips }}</p>
         </div>

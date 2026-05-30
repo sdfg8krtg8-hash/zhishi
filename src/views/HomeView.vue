@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { INGREDIENT_CATEGORIES } from '@/types/ingredient'
 import { ingredients } from '@/data/ingredients'
 import { recipes } from '@/data/recipes'
+import { SeedlingIcon, GridIcon, RecipeBookIcon } from '@/components/icons'
 import IngredientCard from '@/components/common/IngredientCard.vue'
 import RecipeCard from '@/components/common/RecipeCard.vue'
 
@@ -15,7 +16,7 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
   <div class="page-container">
     <!-- Starter section -->
     <section class="home-section">
-      <h2 class="section-title">新手入门</h2>
+      <h2 class="section-title section-title--icon"><SeedlingIcon /> 新手入门</h2>
       <div class="card-grid">
         <IngredientCard v-for="item in starterIngredients" :key="item.id" :ingredient="item" />
         <RecipeCard v-for="item in starterRecipes" :key="item.id" :recipe="item" />
@@ -26,7 +27,7 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
 
     <!-- Category navigation -->
     <section class="home-section">
-      <h2 class="section-title">食材分类</h2>
+      <h2 class="section-title section-title--icon"><GridIcon /> 食材分类</h2>
       <div class="category-grid">
         <router-link
           v-for="cat in INGREDIENT_CATEGORIES"
@@ -43,7 +44,7 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
 
     <!-- Popular recipes -->
     <section class="home-section">
-      <h2 class="section-title">热门食谱</h2>
+      <h2 class="section-title section-title--icon"><RecipeBookIcon /> 热门食谱</h2>
       <div class="scroll-row">
         <RecipeCard v-for="item in popularRecipes" :key="item.id" :recipe="item" />
       </div>
