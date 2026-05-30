@@ -35,11 +35,14 @@ defineProps<{
   border: var(--card-border);
   border-radius: var(--card-radius);
   overflow: hidden;
-  transition: border-color 0.2s;
+  box-shadow: var(--card-shadow);
+  transition: var(--card-transition);
 }
 
 .recipe-card:hover {
   border-color: var(--color-border-hover);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-4px);
   text-decoration: none;
 }
 
