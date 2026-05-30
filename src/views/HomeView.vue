@@ -34,9 +34,6 @@ const hasResults = computed(() =>
 
 function onSearch() {
   showResults.value = false
-  if (searchQuery.value.trim()) {
-    router.push(`/recipes?search=${encodeURIComponent(searchQuery.value.trim())}`)
-  }
 }
 
 function goToIngredient(id: string) {
@@ -64,6 +61,22 @@ watch(searchQuery, () => {
 
 onMounted(() => document.addEventListener('click', closeResults))
 onUnmounted(() => document.removeEventListener('click', closeResults))
+
+const isSearching = computed(() => searchQuery.value.trim().length > 0)
+
+const fullResults = computed(() => {
+  const q = searchQuery.value.trim().toLowerCase()
+  if (!q) return { ingredients: [], recipes: [] }
+  return {
+    ingredients: ingredients.filter(i =>
+      i.name.toLowerCase().includes(q) ||
+      i.alias.some(a => a.toLowerCase().includes(q))
+    ),
+    recipes: recipes.filter(r =>
+      r.name.toLowerCase().includes(q)
+    ),
+  }
+})
 
 const starterIngredients = computed(() => ingredients.slice(0, 2))
 const starterRecipes = computed(() => recipes.filter(r => r.difficulty === 'easy').slice(0, 2))
@@ -111,47 +124,76 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
       </div>
     </div>
 
-    <!-- Starter section -->
-    <section class="home-section">
-      <h2 class="section-title section-title--icon"><SeedlingIcon /> 新手入门</h2>
-      <div class="card-grid">
-        <IngredientCard v-for="item in starterIngredients" :key="item.id" :ingredient="item" />
-        <RecipeCard v-for="item in starterRecipes" :key="item.id" :recipe="item" />
+    <!-- Search results -->
+    <template v-if="isSearching">
+      <template v-if="fullResults.ingredients.length">
+        <section class="home-section">
+          <h2 class="section-title section-title--icon"><GridIcon /> 食材 ({{ fullResults.ingredients.length }})</h2>
+          <div class="card-grid">
+            <IngredientCard v-for="item in fullResults.ingredients" :key="item.id" :ingredient="item" />
+          </div>
+        </section>
+        <hr class="divider" />
+      </template>
+      <template v-if="fullResults.recipes.length">
+        <section class="home-section">
+          <h2 class="section-title section-title--icon"><RecipeBookIcon /> 食谱 ({{ fullResults.recipes.length }})</h2>
+          <div class="card-grid">
+            <RecipeCard v-for="item in fullResults.recipes" :key="item.id" :recipe="item" />
+          </div>
+        </section>
+      </template>
+      <div v-if="!fullResults.ingredients.length && !fullResults.recipes.length" class="empty-state">
+        <svg class="empty-state__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.35-4.35" />
+          <line x1="8" y1="11" x2="14" y2="11" />
+        </svg>
+        <p class="empty-state__text">未找到相关内容，试试其他关键词</p>
       </div>
-    </section>
+    </template>
 
-    <hr class="divider" />
+    <!-- Normal homepage -->
+    <template v-else>
+      <section class="home-section">
+        <h2 class="section-title section-title--icon"><SeedlingIcon /> 新手入门</h2>
+        <div class="card-grid">
+          <IngredientCard v-for="item in starterIngredients" :key="item.id" :ingredient="item" />
+          <RecipeCard v-for="item in starterRecipes" :key="item.id" :recipe="item" />
+        </div>
+      </section>
 
-    <!-- Category navigation -->
-    <section class="home-section">
-      <div class="section-header">
-        <h2 class="section-title section-title--icon"><GridIcon /> 食材分类</h2>
-        <router-link to="/ingredients" class="section-header__more">查看全部 &rarr;</router-link>
-      </div>
-      <div class="category-grid">
-        <router-link
-          v-for="cat in INGREDIENT_CATEGORIES"
-          :key="cat"
-          :to="`/ingredients?category=${cat}`"
-          class="category-item"
-        >
-          <span class="category-item__text">{{ cat }}</span>
-        </router-link>
-      </div>
-    </section>
+      <hr class="divider" />
 
-    <hr class="divider" />
+      <section class="home-section">
+        <div class="section-header">
+          <h2 class="section-title section-title--icon"><GridIcon /> 食材分类</h2>
+          <router-link to="/ingredients" class="section-header__more">查看全部 &rarr;</router-link>
+        </div>
+        <div class="category-grid">
+          <router-link
+            v-for="cat in INGREDIENT_CATEGORIES"
+            :key="cat"
+            :to="`/ingredients?category=${cat}`"
+            class="category-item"
+          >
+            <span class="category-item__text">{{ cat }}</span>
+          </router-link>
+        </div>
+      </section>
 
-    <!-- Popular recipes -->
-    <section class="home-section">
-      <div class="section-header">
-        <h2 class="section-title section-title--icon"><RecipeBookIcon /> 热门食谱</h2>
-        <router-link to="/recipes" class="section-header__more">查看全部 &rarr;</router-link>
-      </div>
-      <div class="card-grid">
-        <RecipeCard v-for="item in popularRecipes" :key="item.id" :recipe="item" />
-      </div>
-    </section>
+      <hr class="divider" />
+
+      <section class="home-section">
+        <div class="section-header">
+          <h2 class="section-title section-title--icon"><RecipeBookIcon /> 热门食谱</h2>
+          <router-link to="/recipes" class="section-header__more">查看全部 &rarr;</router-link>
+        </div>
+        <div class="card-grid">
+          <RecipeCard v-for="item in popularRecipes" :key="item.id" :recipe="item" />
+        </div>
+      </section>
+    </template>
   </div>
 </template>
 
