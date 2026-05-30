@@ -25,7 +25,8 @@ defineProps<{
 .ingredient-card {
   display: flex;
   flex-direction: column;
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
   background: var(--color-card-bg);
   border: var(--card-border);
   border-radius: var(--card-radius);
