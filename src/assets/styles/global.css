@@ -5,7 +5,7 @@
 .page-container {
   max-width: var(--page-max-width);
   margin: 0 auto;
-  padding: 0 var(--page-padding-x);
+  padding: var(--section-gap) var(--page-padding-x) 0;
   padding-bottom: var(--section-gap);
 }
 
@@ -41,7 +41,7 @@
 
 @media (max-width: 768px) {
   .page-container {
-    padding: 0 var(--page-padding-x-mobile);
+    padding: var(--section-gap) var(--page-padding-x-mobile) 0;
     padding-bottom: var(--component-gap);
   }
 
