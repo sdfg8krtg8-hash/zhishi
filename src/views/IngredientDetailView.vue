@@ -31,7 +31,7 @@ const relatedRecipes = computed(() => {
 </script>
 
 <template>
-  <div class="page-container">
+  <div class="page-container page-container--with-top">
     <div v-if="!ingredient" class="empty-state">
       <div class="empty-state__icon"></div>
       <p class="empty-state__text">食材未找到</p>

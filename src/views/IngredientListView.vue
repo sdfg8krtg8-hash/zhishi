@@ -32,7 +32,7 @@ const filtered = computed(() => {
 </script>
 
 <template>
-  <div class="page-container">
+  <div class="page-container page-container--with-top">
     <h1 class="section-title">食材大全</h1>
 
     <div class="list-toolbar">

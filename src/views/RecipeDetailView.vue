@@ -22,7 +22,7 @@ function toggleFavorite() {
 </script>
 
 <template>
-  <div class="page-container">
+  <div class="page-container page-container--with-top">
     <div v-if="!recipe" class="empty-state">
       <div class="empty-state__icon"></div>
       <p class="empty-state__text">食谱未找到</p>

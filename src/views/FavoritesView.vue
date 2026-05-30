@@ -19,7 +19,7 @@ const favoriteRecipeItems = computed(() =>
 </script>
 
 <template>
-  <div class="page-container">
+  <div class="page-container page-container--with-top">
     <h1 class="section-title">我的收藏</h1>
 
     <div class="tabs">

@@ -4,6 +4,7 @@ import { INGREDIENT_CATEGORIES } from '@/types/ingredient'
 import { ingredients } from '@/data/ingredients'
 import { recipes } from '@/data/recipes'
 import { SeedlingIcon, GridIcon, RecipeBookIcon } from '@/components/icons'
+import HomeBanner from '@/components/layout/HomeBanner.vue'
 import IngredientCard from '@/components/common/IngredientCard.vue'
 import RecipeCard from '@/components/common/RecipeCard.vue'
 
@@ -13,6 +14,7 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
 </script>
 
 <template>
+  <HomeBanner />
   <div class="page-container">
     <!-- Starter section -->
     <section class="home-section">

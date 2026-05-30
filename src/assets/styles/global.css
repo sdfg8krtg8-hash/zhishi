@@ -6,8 +6,11 @@
   max-width: var(--page-max-width);
   margin: 0 auto;
   padding: 0 var(--page-padding-x);
-  padding-top: calc(var(--navbar-height) + var(--component-gap));
   padding-bottom: var(--section-gap);
+}
+
+.page-container--with-top {
+  padding-top: calc(var(--navbar-height) + var(--component-gap));
 }
 
 /* Section titles */
@@ -39,8 +42,11 @@
 @media (max-width: 768px) {
   .page-container {
     padding: 0 var(--page-padding-x-mobile);
-    padding-top: calc(var(--navbar-height) + var(--element-gap));
     padding-bottom: var(--component-gap);
+  }
+
+  .page-container--with-top {
+    padding-top: calc(var(--navbar-height) + var(--element-gap));
   }
 
   .card-grid {
