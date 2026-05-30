@@ -78,8 +78,15 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
 
 <style scoped>
 .home-search {
-  max-width: 420px;
+  max-width: 600px;
   margin: 0 auto var(--section-gap);
+}
+
+.home-search :deep(.search-bar) {
+  max-width: 100%;
+  height: 48px;
+  border-radius: 24px;
+  padding: 0 20px;
 }
 
 .home-section {
