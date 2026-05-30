@@ -16,6 +16,7 @@
 <style scoped>
 .banner {
   padding: 48px 24px;
+  padding-top: calc(var(--navbar-height) + 48px);
   background: var(--color-card-bg);
   text-align: center;
 }
@@ -51,6 +52,7 @@
 @media (max-width: 768px) {
   .banner {
     padding: 32px 16px;
+    padding-top: calc(var(--navbar-height) + 32px);
   }
 
   .banner__title {
