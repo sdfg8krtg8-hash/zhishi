@@ -82,15 +82,15 @@ const fullResults = computed(() => {
   }
 })
 
-// Top ingredients by recipe usage
+// Top ingredients by recipe usage (up to 12)
 const topIngredients = computed(() =>
   [...ingredients]
     .filter(i => i.relatedRecipeIds?.length > 0)
     .sort((a, b) => (b.relatedRecipeIds?.length || 0) - (a.relatedRecipeIds?.length || 0))
-    .slice(0, 4)
+    .slice(0, 12)
 )
 
-// Easy recipes from diverse cuisines
+// Easy recipes from diverse cuisines (up to 8)
 const starterRecipes = computed(() => {
   const easy = recipes.filter(r => r.difficulty === 'easy')
   const seen = new Set<string>()
@@ -100,9 +100,58 @@ const starterRecipes = computed(() => {
       diverse.push(r)
       seen.add(r.cuisine)
     }
-    if (diverse.length >= 4) break
+    if (diverse.length >= 8) break
   }
   return diverse
+})
+
+// Carousel: build slides mixing ingredients and recipes
+type SlideItem = { type: 'ingredient'; data: typeof ingredients[number] } | { type: 'recipe'; data: typeof recipes[number] }
+
+const carouselSlides = computed<{ items: SlideItem[] }[]>(() => {
+  const items: SlideItem[] = [
+    ...topIngredients.value.map(i => ({ type: 'ingredient' as const, data: i })),
+    ...starterRecipes.value.map(r => ({ type: 'recipe' as const, data: r })),
+  ]
+  const slides: { items: SlideItem[] }[] = []
+  for (let i = 0; i < items.length; i += 4) {
+    slides.push({ items: items.slice(i, i + 4) })
+  }
+  return slides
+})
+
+// Carousel state
+const currentSlide = ref(0)
+const carouselEl = ref<HTMLElement | null>(null)
+let carouselTimer: ReturnType<typeof setInterval> | null = null
+const CAROUSEL_INTERVAL = 5000
+
+function nextSlide() {
+  currentSlide.value = (currentSlide.value + 1) % carouselSlides.value.length
+}
+
+function goToSlide(index: number) {
+  currentSlide.value = index
+  resetCarouselTimer()
+}
+
+function resetCarouselTimer() {
+  if (carouselTimer) clearInterval(carouselTimer)
+  carouselTimer = setInterval(nextSlide, CAROUSEL_INTERVAL)
+}
+
+function pauseCarousel() {
+  if (carouselTimer) clearInterval(carouselTimer)
+}
+
+onMounted(() => {
+  if (carouselSlides.value.length > 1) {
+    carouselTimer = setInterval(nextSlide, CAROUSEL_INTERVAL)
+  }
+})
+
+onUnmounted(() => {
+  if (carouselTimer) clearInterval(carouselTimer)
 })
 
 // "Hot" recipes: those using the most common ingredients
@@ -212,15 +261,38 @@ const stats = computed(() => ({
 
       <hr class="divider" />
 
-      <!-- Starter -->
+      <!-- Starter Carousel -->
       <section class="home-section">
         <h2 class="section-title section-title--icon"><SeedlingIcon /> 新手入门</h2>
         <p class="section-desc">从最常见的食材开始，迈出烹饪第一步</p>
-        <div class="card-grid">
-          <IngredientCard v-for="item in topIngredients" :key="item.id" :ingredient="item" />
-        </div>
-        <div class="card-grid" style="margin-top: 12px">
-          <RecipeCard v-for="item in starterRecipes" :key="item.id" :recipe="item" />
+        <div
+          ref="carouselEl"
+          class="carousel"
+          @mouseenter="pauseCarousel"
+          @mouseleave="resetCarouselTimer"
+        >
+          <div class="carousel__track" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
+            <div
+              v-for="(slide, si) in carouselSlides"
+              :key="si"
+              class="carousel__slide"
+            >
+              <div class="card-grid">
+                <template v-for="item in slide.items" :key="item.type === 'ingredient' ? item.data.id : item.data.id">
+                  <IngredientCard v-if="item.type === 'ingredient'" :ingredient="item.data" />
+                  <RecipeCard v-else :recipe="item.data" />
+                </template>
+              </div>
+            </div>
+          </div>
+          <div v-if="carouselSlides.length > 1" class="carousel__dots">
+            <button
+              v-for="(_, si) in carouselSlides"
+              :key="si"
+              :class="['carousel__dot', { 'carousel__dot--active': si === currentSlide }]"
+              @click="goToSlide(si)"
+            />
+          </div>
         </div>
       </section>
 
@@ -436,6 +508,49 @@ const stats = computed(() => ({
 .category-item__text {
   font-size: var(--font-size-body);
   color: var(--color-text-body);
+}
+
+/* Carousel */
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel__track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel__slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.carousel__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-border);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.carousel__dot--active {
+  background: var(--color-primary);
+  transform: scale(1.3);
+}
+
+.carousel__dot:hover {
+  background: var(--color-text-muted);
 }
 
 @media (max-width: 768px) {
