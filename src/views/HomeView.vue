@@ -558,5 +558,9 @@ const stats = computed(() => ({
   .category-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .carousel .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 </style>
