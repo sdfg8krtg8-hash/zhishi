@@ -122,7 +122,7 @@ type SlideItem = { type: 'ingredient'; data: typeof ingredients[number] } | { ty
 const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1024)
 function onResize() { windowWidth.value = window.innerWidth }
 
-const cardsPerSlide = computed(() => windowWidth.value <= 768 ? 2 : 4)
+const cardsPerSlide = computed(() => windowWidth.value <= 768 ? 1 : 4)
 
 const carouselSlides = computed<{ items: SlideItem[] }[]>(() => {
   const items: SlideItem[] = [
@@ -567,6 +567,12 @@ const stats = computed(() => ({
 @media (max-width: 768px) {
   .category-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel .card-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
 </style>
