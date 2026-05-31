@@ -13,7 +13,7 @@ defineProps<{
     <PlaceholderImage
       :src="recipe.coverImage"
       :alt="recipe.name"
-      aspect-ratio="260 / 200"
+      aspect-ratio="1 / 1"
     />
     <div class="recipe-card__info">
       <h3 class="recipe-card__name">{{ recipe.name }}</h3>

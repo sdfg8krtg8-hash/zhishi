@@ -12,7 +12,7 @@ defineProps<{
     <PlaceholderImage
       :src="ingredient.image"
       :alt="ingredient.name"
-      aspect-ratio="260 / 200"
+      aspect-ratio="1 / 1"
     />
     <div class="ingredient-card__info">
       <h3 class="ingredient-card__name">{{ ingredient.name }}</h3>
