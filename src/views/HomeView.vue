@@ -63,8 +63,19 @@ watch(searchQuery, () => {
   showResults.value = hasResults.value
 })
 
-onMounted(() => document.addEventListener('click', closeResults))
-onUnmounted(() => document.removeEventListener('click', closeResults))
+onMounted(() => {
+  document.addEventListener('click', closeResults)
+  window.addEventListener('resize', onResize)
+  if (carouselSlides.value.length > 1) {
+    carouselTimer = setInterval(nextSlide, CAROUSEL_INTERVAL)
+  }
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', closeResults)
+  window.removeEventListener('resize', onResize)
+  if (carouselTimer) clearInterval(carouselTimer)
+})
 
 const isSearching = computed(() => searchQuery.value.trim().length > 0)
 
@@ -108,14 +119,20 @@ const starterRecipes = computed(() => {
 // Carousel: build slides mixing ingredients and recipes
 type SlideItem = { type: 'ingredient'; data: typeof ingredients[number] } | { type: 'recipe'; data: typeof recipes[number] }
 
+const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1024)
+function onResize() { windowWidth.value = window.innerWidth }
+
+const cardsPerSlide = computed(() => windowWidth.value <= 768 ? 2 : 4)
+
 const carouselSlides = computed<{ items: SlideItem[] }[]>(() => {
   const items: SlideItem[] = [
     ...topIngredients.value.map(i => ({ type: 'ingredient' as const, data: i })),
     ...starterRecipes.value.map(r => ({ type: 'recipe' as const, data: r })),
   ]
+  const perSlide = cardsPerSlide.value
   const slides: { items: SlideItem[] }[] = []
-  for (let i = 0; i < items.length; i += 4) {
-    slides.push({ items: items.slice(i, i + 4) })
+  for (let i = 0; i < items.length; i += perSlide) {
+    slides.push({ items: items.slice(i, i + perSlide) })
   }
   return slides
 })
@@ -144,14 +161,8 @@ function pauseCarousel() {
   if (carouselTimer) clearInterval(carouselTimer)
 }
 
-onMounted(() => {
-  if (carouselSlides.value.length > 1) {
-    carouselTimer = setInterval(nextSlide, CAROUSEL_INTERVAL)
-  }
-})
-
-onUnmounted(() => {
-  if (carouselTimer) clearInterval(carouselTimer)
+watch(cardsPerSlide, () => {
+  currentSlide.value = 0
 })
 
 // "Hot" recipes: those using the most common ingredients
