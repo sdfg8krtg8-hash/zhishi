@@ -512,13 +512,14 @@ const stats = computed(() => ({
 
 /* Carousel */
 .carousel {
-  overflow: hidden;
   position: relative;
 }
 
 .carousel__track {
   display: flex;
   transition: transform 0.5s ease;
+  overflow: hidden;
+  border-radius: var(--card-radius);
 }
 
 .carousel__slide {
