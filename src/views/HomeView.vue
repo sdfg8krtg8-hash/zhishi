@@ -155,24 +155,6 @@ function pauseCarousel() {
   if (carouselTimer) clearInterval(carouselTimer)
 }
 
-function prevSlide() {
-  currentSlide.value = (currentSlide.value - 1 + carouselSlides.value.length) % carouselSlides.value.length
-}
-
-// Touch swipe
-const touchStartX = ref(0)
-function onTouchStart(e: TouchEvent) {
-  touchStartX.value = e.touches[0].clientX
-}
-function onTouchEnd(e: TouchEvent) {
-  const dx = e.changedTouches[0].clientX - touchStartX.value
-  if (Math.abs(dx) > 50) {
-    if (dx > 0) prevSlide()
-    else nextSlide()
-    resetCarouselTimer()
-  }
-}
-
 // "Hot" recipes: those using the most common ingredients
 const commonIngredientNames = computed(() => {
   const top = [...ingredients]
@@ -289,8 +271,6 @@ const stats = computed(() => ({
           class="carousel"
           @mouseenter="pauseCarousel"
           @mouseleave="resetCarouselTimer"
-          @touchstart="onTouchStart"
-          @touchend="onTouchEnd"
         >
           <div class="carousel__track" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
             <div
@@ -535,7 +515,6 @@ const stats = computed(() => ({
 .carousel {
   overflow: hidden;
   position: relative;
-  touch-action: pan-y;
 }
 
 .carousel__track {
