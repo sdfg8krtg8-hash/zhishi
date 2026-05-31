@@ -65,7 +65,6 @@ watch(searchQuery, () => {
 
 onMounted(() => {
   document.addEventListener('click', closeResults)
-  window.addEventListener('resize', onResize)
   if (carouselSlides.value.length > 1) {
     carouselTimer = setInterval(nextSlide, CAROUSEL_INTERVAL)
   }
@@ -73,7 +72,6 @@ onMounted(() => {
 
 onUnmounted(() => {
   document.removeEventListener('click', closeResults)
-  window.removeEventListener('resize', onResize)
   if (carouselTimer) clearInterval(carouselTimer)
 })
 
@@ -119,20 +117,16 @@ const starterRecipes = computed(() => {
 // Carousel: build slides mixing ingredients and recipes
 type SlideItem = { type: 'ingredient'; data: typeof ingredients[number] } | { type: 'recipe'; data: typeof recipes[number] }
 
-const windowWidth = ref(typeof window !== 'undefined' ? window.innerWidth : 1024)
-function onResize() { windowWidth.value = window.innerWidth }
-
-const cardsPerSlide = computed(() => windowWidth.value <= 768 ? 1 : 4)
+const cardsPerSlide = 4
 
 const carouselSlides = computed<{ items: SlideItem[] }[]>(() => {
   const items: SlideItem[] = [
     ...topIngredients.value.map(i => ({ type: 'ingredient' as const, data: i })),
     ...starterRecipes.value.map(r => ({ type: 'recipe' as const, data: r })),
   ]
-  const perSlide = cardsPerSlide.value
   const slides: { items: SlideItem[] }[] = []
-  for (let i = 0; i < items.length; i += perSlide) {
-    slides.push({ items: items.slice(i, i + perSlide) })
+  for (let i = 0; i < items.length; i += cardsPerSlide) {
+    slides.push({ items: items.slice(i, i + cardsPerSlide) })
   }
   return slides
 })
@@ -160,10 +154,6 @@ function resetCarouselTimer() {
 function pauseCarousel() {
   if (carouselTimer) clearInterval(carouselTimer)
 }
-
-watch(cardsPerSlide, () => {
-  currentSlide.value = 0
-})
 
 // "Hot" recipes: those using the most common ingredients
 const commonIngredientNames = computed(() => {
@@ -567,12 +557,6 @@ const stats = computed(() => ({
 @media (max-width: 768px) {
   .category-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .carousel .card-grid {
-    grid-template-columns: 1fr;
-    max-width: 320px;
-    margin: 0 auto;
   }
 }
 </style>
