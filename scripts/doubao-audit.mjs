@@ -2,7 +2,7 @@ import { readFileSync, readdirSync, writeFileSync, existsSync } from 'fs'
 import { join, basename } from 'path'
 import { request } from 'https'
 
-const API_KEY = 'ark-b8ba9b44-b9ab-4006-9304-cf8537d980b3-a62b3'
+const API_KEY = process.env.DOUBAO_KEY || ''
 const API_URL = 'https://ark.cn-beijing.volces.com/api/v3/chat/completions'
 const MODEL = 'doubao-seed-1-6-vision-250815'
 const ING_DIR = join(process.cwd(), 'public', 'images', 'ingredients')

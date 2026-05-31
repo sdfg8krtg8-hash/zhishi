@@ -3,7 +3,7 @@ import { join } from 'path'
 
 // Always resolve from cwd since script is run from project root
 const ROOT = process.cwd()
-const API_KEY = 'o9PrRJ8CCFLfCIOwNT2xeDIvbSCnRa96QqXTUEllmbdGP5lh0QpX6LuF'
+const API_KEY = process.env.PEXELS_KEY || ''
 const PEXELS_URL = 'https://api.pexels.com/v1/search'
 const OUTPUT_DIR = join(ROOT, 'public', 'images', 'ingredients')
 const DATA_FILE = join(ROOT, 'src', 'data', 'ingredients.ts')

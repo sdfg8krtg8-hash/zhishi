@@ -10,7 +10,7 @@ const OUT = join(process.cwd(), 'public', 'images', 'ingredients')
 const ING_TS = join(process.cwd(), 'src', 'data', 'ingredients.ts')
 const PROGRESS_FILE = join(process.cwd(), 'scripts', 'pexels-progress.json')
 
-const PEXELS_KEY = 'o9PrRJ8CCFLfCIOwNT2xeDIvbSCnRa96QqXTUEllmbdGP5lh0QpX6LuF'
+const PEXELS_KEY = process.env.PEXELS_KEY || ''
 const sleep = ms => new Promise(r => setTimeout(r, ms))
 
 // Query mapping (same as before)

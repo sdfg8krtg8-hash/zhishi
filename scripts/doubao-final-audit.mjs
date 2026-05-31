@@ -5,7 +5,7 @@ import sharp from 'sharp'
 import { ProxyAgent, fetch } from 'undici'
 
 const PROXY = 'http://127.0.0.1:7897'
-const DOUBAO_KEY = 'ark-b8ba9b44-b9ab-4006-9304-cf8537d980b3-a62b3'
+const DOUBAO_KEY = process.env.DOUBAO_KEY || ''
 const DOUBAO_URL = 'https://ark.cn-beijing.volces.com/api/v3/chat/completions'
 const MODEL = 'doubao-seed-1-6-vision-250815'
 const OUT = join(process.cwd(), 'public', 'images', 'ingredients')

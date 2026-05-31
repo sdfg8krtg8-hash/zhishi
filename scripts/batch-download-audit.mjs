@@ -11,7 +11,7 @@ async function wikiFetch(url, opts = {}) { const s = opts.signal || AbortSignal.
 const OUT = join(process.cwd(), 'public', 'images', 'ingredients')
 const ING_TS = join(process.cwd(), 'src', 'data', 'ingredients.ts')
 const PROGRESS_FILE = join(process.cwd(), 'scripts', 'batch-progress.json')
-const DOUBAO_KEY = 'ark-b8ba9b44-b9ab-4006-9304-cf8537d980b3-a62b3'
+const DOUBAO_KEY = process.env.DOUBAO_KEY || ''
 const DOUBAO_URL = 'https://ark.cn-beijing.volces.com/api/v3/chat/completions'
 const MODEL = 'doubao-seed-1-6-vision-250815'
 const sleep = ms => new Promise(r => setTimeout(r, ms))

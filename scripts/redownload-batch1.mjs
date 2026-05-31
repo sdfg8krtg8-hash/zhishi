@@ -3,7 +3,7 @@ import { join } from 'path'
 import sharp from 'sharp'
 
 const ROOT = process.cwd()
-const API_KEY = 'o9PrRJ8CCFLfCIOwNT2xeDIvbSCnRa96QqXTUEllmbdGP5lh0QpX6LuF'
+const API_KEY = process.env.PEXELS_KEY || ''
 const OUTPUT_DIR = join(ROOT, 'public', 'images', 'ingredients')
 const DELAY_MS = 12000 // ~5 req/min, well under 200/hr limit
 const TIMEOUT_MS = 30000

@@ -8,7 +8,7 @@ const PROXY = 'http://127.0.0.1:7897'
 const dispatcher = new ProxyAgent({ uri: PROXY, requestTls: { rejectUnauthorized: false } })
 async function wf(url, opts = {}) { const s = opts.signal || AbortSignal.timeout(20000); return fetch(url, { ...opts, dispatcher, signal: s }) }
 const OUT = join(process.cwd(), 'public', 'images', 'ingredients')
-const DK = 'ark-b8ba9b44-b9ab-4006-9304-cf8537d980b3-a62b3'
+const DK = process.env.DOUBAO_KEY || ''
 const sleep = ms => new Promise(r => setTimeout(r, ms))
 
 async function search(q) {

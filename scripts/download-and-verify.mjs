@@ -3,8 +3,8 @@ import { join } from 'path'
 import { request } from 'https'
 import sharp from 'sharp'
 
-const API_KEY_PEXELS = 'o9PrRJ8CCFLfCIOwNT2xeDIvbSCnRa96QqXTUEllmbdGP5lh0QpX6LuF'
-const API_KEY_DOUBAO = 'ark-b8ba9b44-b9ab-4006-9304-cf8537d980b3-a62b3'
+const API_KEY_PEXELS = process.env.PEXELS_KEY || ''
+const API_KEY_DOUBAO = process.env.DOUBAO_KEY || ''
 const DOUBAO_URL = 'https://ark.cn-beijing.volces.com/api/v3/chat/completions'
 const MODEL = 'doubao-seed-1-6-vision-250815'
 const OUTPUT_DIR = join(process.cwd(), 'public', 'images', 'ingredients')

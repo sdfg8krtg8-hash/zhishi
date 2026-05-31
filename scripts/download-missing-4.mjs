@@ -2,7 +2,7 @@ import { writeFileSync } from 'fs'
 import { join } from 'path'
 
 const ROOT = process.cwd()
-const API_KEY = 'o9PrRJ8CCFLfCIOwNT2xeDIvbSCnRa96QqXTUEllmbdGP5lh0QpX6LuF'
+const API_KEY = process.env.PEXELS_KEY || ''
 const OUTPUT_DIR = join(ROOT, 'public', 'images', 'ingredients')
 
 const MISSING = [
