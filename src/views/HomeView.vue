@@ -166,8 +166,11 @@ function onTouchStart(e: TouchEvent) {
 }
 function onTouchEnd(e: TouchEvent) {
   const dx = e.changedTouches[0].clientX - touchStartX.value
-  if (dx > 50) prevSlide()
-  else if (dx < -50) nextSlide()
+  if (Math.abs(dx) > 50) {
+    if (dx > 0) prevSlide()
+    else nextSlide()
+    resetCarouselTimer()
+  }
 }
 
 // "Hot" recipes: those using the most common ingredients
@@ -532,6 +535,7 @@ const stats = computed(() => ({
 .carousel {
   overflow: hidden;
   position: relative;
+  touch-action: pan-y;
 }
 
 .carousel__track {
