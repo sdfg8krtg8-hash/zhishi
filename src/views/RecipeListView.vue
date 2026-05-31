@@ -7,6 +7,8 @@ import SearchBar from '@/components/ui/SearchBar.vue'
 import FilterBar from '@/components/ui/FilterBar.vue'
 import RecipeCard from '@/components/common/RecipeCard.vue'
 
+defineOptions({ name: 'RecipeListView' })
+
 const route = useRoute()
 const searchQuery = ref((route.query.search as string) || '')
 const selectedDifficulty = ref((route.query.difficulty as string) || '')

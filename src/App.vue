@@ -9,7 +9,9 @@ import BackToTop from '@/components/ui/BackToTop.vue'
   <main>
     <router-view v-slot="{ Component }">
       <transition name="fade">
-        <component :is="Component" />
+        <keep-alive :include="['IngredientListView', 'RecipeListView']">
+          <component :is="Component" />
+        </keep-alive>
       </transition>
     </router-view>
   </main>

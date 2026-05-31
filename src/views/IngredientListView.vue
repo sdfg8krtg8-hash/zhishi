@@ -7,6 +7,8 @@ import SearchBar from '@/components/ui/SearchBar.vue'
 import FilterBar from '@/components/ui/FilterBar.vue'
 import IngredientCard from '@/components/common/IngredientCard.vue'
 
+defineOptions({ name: 'IngredientListView' })
+
 const route = useRoute()
 const searchQuery = ref((route.query.search as string) || '')
 const selectedCategory = ref((route.query.category as string) || '')
