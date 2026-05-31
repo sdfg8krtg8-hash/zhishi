@@ -523,8 +523,12 @@ const stats = computed(() => ({
 }
 
 .carousel__slide {
+  width: 100%;
   min-width: 100%;
+  max-width: 100%;
   flex-shrink: 0;
+  flex-basis: 100%;
+  overflow: hidden;
 }
 
 .carousel__dots {
