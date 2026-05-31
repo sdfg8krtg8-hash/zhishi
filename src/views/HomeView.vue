@@ -558,7 +558,11 @@ const stats = computed(() => ({
   .category-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+</style>
 
+<style>
+@media (max-width: 768px) {
   .carousel .card-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
@@ -569,18 +573,18 @@ const stats = computed(() => ({
     max-width: none;
   }
 
-  .carousel :deep(.ingredient-card__info),
-  .carousel :deep(.recipe-card__info) {
+  .carousel .ingredient-card__info,
+  .carousel .recipe-card__info {
     padding: 8px 4px;
   }
 
-  .carousel :deep(.ingredient-card__name),
-  .carousel :deep(.recipe-card__name) {
+  .carousel .ingredient-card__name,
+  .carousel .recipe-card__name {
     font-size: 12px;
   }
 
-  .carousel :deep(.ingredient-card__category),
-  .carousel :deep(.recipe-card__meta) {
+  .carousel .ingredient-card__category,
+  .carousel .recipe-card__meta {
     font-size: 10px;
   }
 }
