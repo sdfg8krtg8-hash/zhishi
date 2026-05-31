@@ -561,6 +561,27 @@ const stats = computed(() => ({
 
   .carousel .card-grid {
     grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .carousel .card-grid > * {
+    min-width: 0;
+    max-width: none;
+  }
+
+  .carousel :deep(.ingredient-card__info),
+  .carousel :deep(.recipe-card__info) {
+    padding: 8px 4px;
+  }
+
+  .carousel :deep(.ingredient-card__name),
+  .carousel :deep(.recipe-card__name) {
+    font-size: 12px;
+  }
+
+  .carousel :deep(.ingredient-card__category),
+  .carousel :deep(.recipe-card__meta) {
+    font-size: 10px;
   }
 }
 </style>
