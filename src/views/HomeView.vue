@@ -2,6 +2,7 @@
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { INGREDIENT_CATEGORIES } from '@/types/ingredient'
+import { CUISINES } from '@/types/recipe'
 import { ingredients } from '@/data/ingredients'
 import { recipes } from '@/data/recipes'
 import { SeedlingIcon, GridIcon, RecipeBookIcon } from '@/components/icons'
@@ -33,7 +34,10 @@ const hasResults = computed(() =>
 )
 
 function onSearch() {
+  const q = searchQuery.value.trim()
+  if (!q) return
   showResults.value = false
+  router.push(`/recipes?search=${encodeURIComponent(q)}`)
 }
 
 function goToIngredient(id: string) {
@@ -78,9 +82,53 @@ const fullResults = computed(() => {
   }
 })
 
-const starterIngredients = computed(() => ingredients.slice(0, 2))
-const starterRecipes = computed(() => recipes.filter(r => r.difficulty === 'easy').slice(0, 2))
-const popularRecipes = computed(() => recipes.slice(0, 4))
+// Top ingredients by recipe usage
+const topIngredients = computed(() =>
+  [...ingredients]
+    .filter(i => i.relatedRecipeIds?.length > 0)
+    .sort((a, b) => (b.relatedRecipeIds?.length || 0) - (a.relatedRecipeIds?.length || 0))
+    .slice(0, 4)
+)
+
+// Easy recipes from diverse cuisines
+const starterRecipes = computed(() => {
+  const easy = recipes.filter(r => r.difficulty === 'easy')
+  const seen = new Set<string>()
+  const diverse: typeof easy = []
+  for (const r of easy) {
+    if (!seen.has(r.cuisine) || diverse.length < 3) {
+      diverse.push(r)
+      seen.add(r.cuisine)
+    }
+    if (diverse.length >= 4) break
+  }
+  return diverse
+})
+
+// "Hot" recipes: those using the most common ingredients
+const commonIngredientNames = computed(() => {
+  const top = [...ingredients]
+    .filter(i => i.relatedRecipeIds?.length > 0)
+    .sort((a, b) => (b.relatedRecipeIds?.length || 0) - (a.relatedRecipeIds?.length || 0))
+    .slice(0, 15)
+    .map(i => i.name)
+  return new Set(top)
+})
+
+const popularRecipes = computed(() =>
+  [...recipes]
+    .map(r => ({
+      ...r,
+      _score: r.ingredients.filter(ri => commonIngredientNames.value.has(ri.name)).length,
+    }))
+    .sort((a, b) => b._score - a._score)
+    .slice(0, 4)
+)
+
+const stats = computed(() => ({
+  ingredients: ingredients.length,
+  recipes: recipes.length,
+}))
 </script>
 
 <template>
@@ -119,7 +167,7 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
           </button>
         </template>
         <div class="search-results__footer" @mousedown.prevent="onSearch">
-          查看更多食谱结果 &rarr;
+          查看全部结果 &rarr;
         </div>
       </div>
     </div>
@@ -155,16 +203,30 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
 
     <!-- Normal homepage -->
     <template v-else>
+      <!-- Stats -->
+      <div class="stats-bar">
+        <span>共收录 <strong>{{ stats.ingredients }}</strong> 种食材</span>
+        <span class="stats-bar__sep">·</span>
+        <span><strong>{{ stats.recipes }}</strong> 道家常菜谱</span>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Starter -->
       <section class="home-section">
         <h2 class="section-title section-title--icon"><SeedlingIcon /> 新手入门</h2>
+        <p class="section-desc">从最常见的食材开始，迈出烹饪第一步</p>
         <div class="card-grid">
-          <IngredientCard v-for="item in starterIngredients" :key="item.id" :ingredient="item" />
+          <IngredientCard v-for="item in topIngredients" :key="item.id" :ingredient="item" />
+        </div>
+        <div class="card-grid" style="margin-top: 12px">
           <RecipeCard v-for="item in starterRecipes" :key="item.id" :recipe="item" />
         </div>
       </section>
 
       <hr class="divider" />
 
+      <!-- Ingredient Categories -->
       <section class="home-section">
         <div class="section-header">
           <h2 class="section-title section-title--icon"><GridIcon /> 食材分类</h2>
@@ -184,6 +246,27 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
 
       <hr class="divider" />
 
+      <!-- Cuisines -->
+      <section class="home-section">
+        <div class="section-header">
+          <h2 class="section-title section-title--icon"><RecipeBookIcon /> 菜系浏览</h2>
+          <router-link to="/recipes" class="section-header__more">查看全部 &rarr;</router-link>
+        </div>
+        <div class="category-grid">
+          <router-link
+            v-for="c in CUISINES"
+            :key="c"
+            :to="`/recipes?cuisine=${c}`"
+            class="category-item"
+          >
+            <span class="category-item__text">{{ c }}</span>
+          </router-link>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Hot Recipes -->
       <section class="home-section">
         <div class="section-header">
           <h2 class="section-title section-title--icon"><RecipeBookIcon /> 热门食谱</h2>
@@ -279,6 +362,12 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
   margin-bottom: var(--component-gap);
 }
 
+.section-desc {
+  font-size: var(--font-size-note);
+  color: var(--color-text-muted);
+  margin: -12px 0 16px;
+}
+
 .section-header {
   display: flex;
   align-items: baseline;
@@ -300,6 +389,22 @@ const popularRecipes = computed(() => recipes.slice(0, 4))
 .section-header__more:hover {
   color: var(--color-primary);
   text-decoration: none;
+}
+
+.stats-bar {
+  text-align: center;
+  font-size: var(--font-size-note);
+  color: var(--color-text-muted);
+  padding: 8px 0 4px;
+}
+
+.stats-bar strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.stats-bar__sep {
+  margin: 0 8px;
 }
 
 .category-grid {
