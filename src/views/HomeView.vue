@@ -299,26 +299,6 @@ const stats = computed(() => ({
 
       <hr class="divider" />
 
-      <!-- Ingredient Categories -->
-      <section class="home-section">
-        <div class="section-header">
-          <h2 class="section-title section-title--icon"><GridIcon /> 食材分类</h2>
-          <router-link to="/ingredients" class="section-header__more">查看全部 &rarr;</router-link>
-        </div>
-        <div class="category-grid">
-          <router-link
-            v-for="cat in INGREDIENT_CATEGORIES"
-            :key="cat"
-            :to="`/ingredients?category=${cat}`"
-            class="category-item"
-          >
-            <span class="category-item__text">{{ cat }}</span>
-          </router-link>
-        </div>
-      </section>
-
-      <hr class="divider" />
-
       <!-- Cuisines -->
       <section class="home-section">
         <div class="section-header">
@@ -333,6 +313,26 @@ const stats = computed(() => ({
             class="category-item"
           >
             <span class="category-item__text">{{ c }}</span>
+          </router-link>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Ingredient Categories -->
+      <section class="home-section">
+        <div class="section-header">
+          <h2 class="section-title section-title--icon"><GridIcon /> 食材分类</h2>
+          <router-link to="/ingredients" class="section-header__more">查看全部 &rarr;</router-link>
+        </div>
+        <div class="category-grid">
+          <router-link
+            v-for="cat in INGREDIENT_CATEGORIES"
+            :key="cat"
+            :to="`/ingredients?category=${cat}`"
+            class="category-item"
+          >
+            <span class="category-item__text">{{ cat }}</span>
           </router-link>
         </div>
       </section>
@@ -560,7 +560,7 @@ const stats = computed(() => ({
 
 @media (max-width: 768px) {
   .category-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 </style>
