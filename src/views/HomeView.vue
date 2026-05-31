@@ -560,32 +560,3 @@ const stats = computed(() => ({
   }
 }
 </style>
-
-<style>
-@media (max-width: 768px) {
-  .carousel .card-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-  }
-
-  .carousel .card-grid > * {
-    min-width: 0;
-    max-width: none;
-  }
-
-  .carousel .ingredient-card__info,
-  .carousel .recipe-card__info {
-    padding: 8px 4px;
-  }
-
-  .carousel .ingredient-card__name,
-  .carousel .recipe-card__name {
-    font-size: 12px;
-  }
-
-  .carousel .ingredient-card__category,
-  .carousel .recipe-card__meta {
-    font-size: 10px;
-  }
-}
-</style>
