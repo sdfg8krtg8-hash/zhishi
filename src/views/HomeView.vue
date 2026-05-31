@@ -285,14 +285,14 @@ const stats = computed(() => ({
               </div>
             </div>
           </div>
-          <div v-if="carouselSlides.length > 1" class="carousel__dots">
-            <button
-              v-for="(_, si) in carouselSlides"
-              :key="si"
-              :class="['carousel__dot', { 'carousel__dot--active': si === currentSlide }]"
-              @click="goToSlide(si)"
-            />
-          </div>
+        </div>
+        <div v-if="carouselSlides.length > 1" class="carousel__dots">
+          <button
+            v-for="(_, si) in carouselSlides"
+            :key="si"
+            :class="['carousel__dot', { 'carousel__dot--active': si === currentSlide }]"
+            @click="goToSlide(si)"
+          />
         </div>
       </section>
 
@@ -512,14 +512,13 @@ const stats = computed(() => ({
 
 /* Carousel */
 .carousel {
+  overflow: hidden;
   position: relative;
 }
 
 .carousel__track {
   display: flex;
   transition: transform 0.5s ease;
-  overflow: hidden;
-  border-radius: var(--card-radius);
 }
 
 .carousel__slide {
