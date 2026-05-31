@@ -1,0 +1,352 @@
+{
+  "大蒜": {
+    "name": "大蒜",
+    "status": "no_images",
+    "recipeCount": 48
+  },
+  "生抽": {
+    "name": "生抽",
+    "status": "all_failed",
+    "recipeCount": 48
+  },
+  "淀粉": {
+    "name": "淀粉",
+    "status": "all_failed",
+    "recipeCount": 37
+  },
+  "干辣椒": {
+    "name": "干辣椒",
+    "status": "passed",
+    "reason": "理由：图片展示的是完整的红辣椒（干辣椒的一种形态），无其他食材混入，也非含该调味品的菜肴，符合干辣椒作为调味品本身（完整香料）的形态要求。",
+    "recipeCount": 17
+  },
+  "老抽": {
+    "name": "老抽",
+    "status": "all_failed",
+    "recipeCount": 14
+  },
+  "香菇": {
+    "name": "香菇",
+    "status": "all_failed",
+    "recipeCount": 13
+  },
+  "酱油": {
+    "name": "酱油",
+    "status": "all_failed",
+    "recipeCount": 12
+  },
+  "花椒": {
+    "name": "花椒",
+    "status": "all_failed",
+    "recipeCount": 12
+  },
+  "鸡汤": {
+    "name": "鸡汤",
+    "status": "all_failed",
+    "recipeCount": 8
+  },
+  "火腿": {
+    "name": "火腿",
+    "status": "no_images",
+    "recipeCount": 8
+  },
+  "青菜": {
+    "name": "青菜",
+    "status": "passed",
+    "reason": "理由：图片中的青菜是采摘后的新鲜蔬菜，未长在植株、田地或藤蔓上，未混入其他不符合的食材/物品，也非烹饪过的蔬菜。",
+    "recipeCount": 7
+  },
+  "蚝油": {
+    "name": "蚝油",
+    "status": "all_failed",
+    "recipeCount": 7
+  },
+  "豆腐": {
+    "name": "豆腐",
+    "status": "all_failed",
+    "recipeCount": 6
+  },
+  "虾": {
+    "name": "虾",
+    "status": "all_failed",
+    "recipeCount": 5
+  },
+  "八角": {
+    "name": "八角",
+    "status": "passed",
+    "reason": "理由：图片展示了八角（完整香料形态），未呈现含八角的菜肴/食物，虽有其他香料（如干辣椒、肉蔻、丁香），但八角本身形态（完整香料）清晰呈现，核心展示对象为八角的完",
+    "recipeCount": 5
+  },
+  "蛋清": {
+    "name": "蛋清",
+    "status": "passed",
+    "reason": "理由：图片展示的是鸡蛋（禽蛋），中间破壳的鸡蛋呈现出自身的蛋清（及蛋黄），未混入其他食材。",
+    "recipeCount": 5
+  },
+  "贝类": {
+    "name": "贝类",
+    "status": "passed",
+    "reason": "理由：图中贝类（牡蛎）为未经烹饪的生鲜状态，品种清晰可辨认，未呈现活体观赏或烹饪后菜品状态，搭配物未混入其他食材（主体贝类符合要求）。",
+    "recipeCount": 5
+  },
+  "木耳": {
+    "name": "木耳",
+    "status": "all_failed",
+    "recipeCount": 4
+  },
+  "香菜": {
+    "name": "香菜",
+    "status": "passed",
+    "reason": "理由：图片中的香菜为采摘后的新鲜茎叶，未长于植株/田地/藤蔓，未混入非蔬菜类物品，且非花朵、幼苗或烹饪过的状态。",
+    "recipeCount": 4
+  },
+  "豆干": {
+    "name": "豆干",
+    "status": "all_failed",
+    "recipeCount": 3
+  },
+  "辣椒油": {
+    "name": "辣椒油",
+    "status": "all_failed",
+    "recipeCount": 3
+  },
+  "泡椒": {
+    "name": "泡椒",
+    "status": "passed",
+    "reason": "理由：图片展示的是采摘后的新鲜红辣椒（可作为泡椒原料的新鲜蔬菜），无植株、其他食材混入，也无烹饪处理，满足“新鲜蔬菜本身、无植株/其他食材/烹饪”的审核要求。",
+    "recipeCount": 3
+  },
+  "剁椒": {
+    "name": "剁椒",
+    "status": "passed",
+    "reason": "理由：图片展示的是采摘后的新鲜红辣椒（剁椒原料），无植株、其他食材混入，非烹饪过的菜肴。",
+    "recipeCount": 3
+  },
+  "腊肉": {
+    "name": "腊肉",
+    "status": "all_failed",
+    "recipeCount": 3
+  },
+  "土豆": {
+    "name": "土豆",
+    "status": "passed",
+    "reason": "图中的土豆是采摘后的新鲜蔬菜，未烹饪，虽与其他食材同框，但土豆本身满足“采摘后新鲜蔬菜、非植株/烹饪品”的要求。",
+    "recipeCount": 2
+  },
+  "鲈鱼": {
+    "name": "鲈鱼",
+    "status": "all_failed",
+    "recipeCount": 2
+  },
+  "黄鳝": {
+    "name": "黄鳝",
+    "status": "all_failed",
+    "recipeCount": 2
+  },
+  "胡椒粉": {
+    "name": "胡椒粉",
+    "status": "passed",
+    "reason": "理由：图片中有装着胡椒粉（粉末/颗粒形态）的专用容器，未混入其他食材，呈现的是胡椒粉本身的形态。",
+    "recipeCount": 2
+  },
+  "面条": {
+    "name": "面条",
+    "status": "passed",
+    "reason": "理由：图片中的各类意面（如螺旋面、斜切管面、贝壳面）均呈现原始干燥、未烹饪的状态，无烹饪后熟食的特征。",
+    "recipeCount": 2
+  },
+  "青蒜": {
+    "name": "青蒜",
+    "status": "passed",
+    "reason": "理由：图片中的青蒜是采摘后的新鲜蔬菜，摆放在蔬菜摊位上，未长在植株/田地/藤蔓上，也未混入其他不符合要求的食材、物品，且为新鲜蔬菜本身而非花朵、植株、幼苗或烹饪",
+    "recipeCount": 2
+  },
+  "马蹄": {
+    "name": "马蹄",
+    "status": "all_failed",
+    "recipeCount": 2
+  },
+  "牛蛙": {
+    "name": "牛蛙",
+    "status": "no_images",
+    "recipeCount": 2
+  },
+  "鳜鱼": {
+    "name": "鳜鱼",
+    "status": "all_failed",
+    "recipeCount": 2
+  },
+  "鱼头": {
+    "name": "鱼头",
+    "status": "passed",
+    "reason": "理由：图片中的鱼为未经烹饪的生鲜状态，品种清晰可辨，属于市场售卖的生鲜水产，无活体观赏、烹饪后菜品及其他食材混入的情况。",
+    "recipeCount": 2
+  },
+  "海参": {
+    "name": "海参",
+    "status": "all_failed",
+    "recipeCount": 2
+  },
+  "芥末": {
+    "name": "芥末",
+    "status": "passed",
+    "reason": "理由：图片中的芥末以绿色酱料形态呈现，未混入其他食材，也非含芥末的菜肴，属于芥末本身的酱料形态。",
+    "recipeCount": 2
+  },
+  "荷叶": {
+    "name": "荷叶",
+    "status": "all_failed",
+    "recipeCount": 2
+  },
+  "白芝麻": {
+    "name": "白芝麻",
+    "status": "all_failed",
+    "recipeCount": 2
+  },
+  "大米": {
+    "name": "大米",
+    "status": "passed",
+    "reason": "理由：图片中的大米装在容器中及散落在托盘上，呈现出原始的干燥、未烹饪的状态，无烹饪后的菜品或熟食特征。",
+    "recipeCount": 1
+  },
+  "白菜": {
+    "name": "白菜",
+    "status": "passed",
+    "reason": "理由：图片中的白菜是采摘后的新鲜蔬菜，未长在植株/田地/藤蔓上，未混入其他违规食材/物品，也非花朵/植株/幼苗、菜肴/烹饪过的状态。",
+    "recipeCount": 1
+  },
+  "茄子": {
+    "name": "茄子",
+    "status": "passed",
+    "reason": "理由：图片中的茄子是采摘后的新鲜果实，未长在植株/田地/藤蔓上，且无其他不符合的食材/物品混入，是新鲜蔬菜本身。",
+    "recipeCount": 1
+  },
+  "鲤鱼": {
+    "name": "鲤鱼",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "鲫鱼": {
+    "name": "鲫鱼",
+    "status": "passed",
+    "reason": "理由：图片中的鱼为未经烹饪的生鲜鲫鱼，品种清晰可辨认，无其他食材混入，也非烹饪后菜品或活体观赏（以食用为目的的生鲜活体状态）。",
+    "recipeCount": 1
+  },
+  "香油": {
+    "name": "香油",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "红薯": {
+    "name": "红薯",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "包菜": {
+    "name": "包菜",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "菜心": {
+    "name": "菜心",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "蒜苔": {
+    "name": "蒜苔",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "酸萝卜": {
+    "name": "酸萝卜",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "冬笋": {
+    "name": "冬笋",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "蒲菜": {
+    "name": "蒲菜",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "梅干菜": {
+    "name": "梅干菜",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "枸杞": {
+    "name": "枸杞",
+    "status": "passed",
+    "reason": "图片中的枸杞为采摘后放置于碗中，未长在植株/田地/藤蔓上，未混入其他食材/物品，非花朵/植株/幼苗，也非烹饪过的菜肴。",
+    "recipeCount": 1
+  },
+  "腊鱼": {
+    "name": "腊鱼",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "鸽子": {
+    "name": "鸽子",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "甲鱼": {
+    "name": "甲鱼",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "毛肚": {
+    "name": "毛肚",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "黄喉": {
+    "name": "黄喉",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "蛋饺": {
+    "name": "蛋饺",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "银鱼": {
+    "name": "银鱼",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "米饭": {
+    "name": "米饭",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "粉丝": {
+    "name": "粉丝",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "沙姜": {
+    "name": "沙姜",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "蒸肉粉": {
+    "name": "蒸肉粉",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "红糟": {
+    "name": "红糟",
+    "status": "all_failed",
+    "recipeCount": 1
+  },
+  "蜂蜜": {
+    "name": "蜂蜜",
+    "status": "passed",
+    "reason": "理由：图片中碗内的蜂蜜、木勺上及滴落的蜂蜜为蜂蜜本身的液体形态，未混入含蜂蜜的菜肴或其他食材（护肤品、叶子非食材）。",
+    "recipeCount": 1
+  }
+}

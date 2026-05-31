@@ -1,0 +1,830 @@
+{
+  "土豆": {
+    "name": "土豆",
+    "status": "no_images"
+  },
+  "番茄": {
+    "name": "番茄",
+    "status": "passed",
+    "reason": "理由：图片展示的是采摘后的新鲜番茄，单独放置在木质表面，未长在植株/田地/藤蔓上，无其他食材/物品混入，也非花朵/植株/幼苗或烹饪过的菜肴。"
+  },
+  "猪肉": {
+    "name": "猪肉",
+    "status": "passed",
+    "reason": "理由：图片中展示了悬挂的未经烹饪的生猪肉，肉类部位清晰可辨认，无活体动物、熟肉或其他食材混入。"
+  },
+  "豆腐": {
+    "name": "豆腐",
+    "status": "no_images"
+  },
+  "大米": {
+    "name": "大米",
+    "status": "no_images"
+  },
+  "青菜": {
+    "name": "青菜",
+    "status": "all_failed"
+  },
+  "虾": {
+    "name": "虾",
+    "status": "no_images"
+  },
+  "白菜": {
+    "name": "白菜",
+    "status": "no_images"
+  },
+  "黄瓜": {
+    "name": "黄瓜",
+    "status": "passed",
+    "reason": "图片中的黄瓜为采摘后的新鲜蔬菜，放置于货架的筐内，未长在植株/田地/藤蔓上，未混入其他不符合要求的食材/物品，也非花朵、植株、幼苗或烹饪过的黄瓜。"
+  },
+  "胡萝卜": {
+    "name": "胡萝卜",
+    "status": "passed",
+    "reason": "理由：图中是采摘后带着茎叶的新鲜胡萝卜，无长在植株/田地等状态，无其他食材/物品混入，也非菜肴或烹饪过的，符合要求。"
+  },
+  "茄子": {
+    "name": "茄子",
+    "status": "all_failed"
+  },
+  "豆角": {
+    "name": "豆角",
+    "status": "passed",
+    "reason": "理由：图片展示的是采摘后的新鲜豆角，未长在植株/田地/藤蔓上，无其他食材/物品混入，也非花朵/植株/幼苗、烹饪后的菜肴。"
+  },
+  "青椒": {
+    "name": "青椒",
+    "status": "passed",
+    "reason": "理由：图片中的青椒是采摘后的新鲜蔬菜，单独（与红椒同盘，无违规混入物）呈现，未长在植株/田地/藤蔓上，也非烹饪过的菜肴或其他非蔬菜类物品。"
+  },
+  "西兰花": {
+    "name": "西兰花",
+    "status": "passed",
+    "reason": "理由：图中西兰花是采摘后的新鲜蔬菜，放置于商超货架的陈列筐内，无植株/田地/藤蔓附着，未混入其他食材/物品，也非花朵、植株、幼苗或烹饪状态。"
+  },
+  "菜花": {
+    "name": "菜花",
+    "status": "passed",
+    "reason": "理由：图片展示的是采摘后的新鲜花椰菜（菜花），无其他食材/物品混入，非烹饪状态，也非长在植株上的状态、花朵或幼苗。"
+  },
+  "菠菜": {
+    "name": "菠菜",
+    "status": "passed",
+    "reason": "理由：图片展示的是采摘后的新鲜蔬菜（菠菜），无长在植株/田地/藤蔓上、无混入其他食材/物品、非花朵/幼苗/菜肴，满足要求。  \n\n（注：若经品种鉴别该蔬菜非菠菜"
+  },
+  "油麦菜": {
+    "name": "油麦菜",
+    "status": "passed",
+    "reason": "图片中的油麦菜是采摘后的新鲜蔬菜，未混入其他不符合的食材/物品，也非植株、幼苗或烹饪后的状态。"
+  },
+  "芹菜": {
+    "name": "芹菜",
+    "status": "no_images"
+  },
+  "韭菜": {
+    "name": "韭菜",
+    "status": "all_failed"
+  },
+  "大蒜": {
+    "name": "大蒜",
+    "status": "no_images"
+  },
+  "山药": {
+    "name": "山药",
+    "status": "no_results"
+  },
+  "芋头": {
+    "name": "芋头",
+    "status": "no_images"
+  },
+  "丝瓜": {
+    "name": "丝瓜",
+    "status": "no_images"
+  },
+  "空心菜": {
+    "name": "空心菜",
+    "status": "passed",
+    "reason": "理由：图中为采摘后的新鲜空心菜（茎、叶），未附着于植株/田地/藤蔓，无其他食材或物品混入，也非花朵、幼苗或烹饪过的状态。"
+  },
+  "茼蒿": {
+    "name": "茼蒿",
+    "status": "no_images"
+  },
+  "娃娃菜": {
+    "name": "娃娃菜",
+    "status": "passed",
+    "reason": "理由：图片展示的是采摘后的新鲜娃娃菜，无长在植株/田地/藤蔓上、无混入其他食材/物品、非花朵/植株/幼苗、非菜肴/烹饪过的状态，满足要求。"
+  },
+  "莴笋": {
+    "name": "莴笋",
+    "status": "all_failed"
+  },
+  "苹果": {
+    "name": "苹果",
+    "status": "passed",
+    "reason": "理由：图中为采摘后的新鲜苹果，放置于盘子内，未混入其他食材/物品，也非长在植株上或烹饪过的状态。"
+  },
+  "香蕉": {
+    "name": "香蕉",
+    "status": "passed",
+    "reason": "理由：图片中的香蕉是采摘后的新鲜水果，陈列于超市售卖区域，未长在植株/田地/藤蔓上，未混入其他食材/物品，也非花朵、植株、幼苗或烹饪过的香蕉。"
+  },
+  "桃子": {
+    "name": "桃子",
+    "status": "passed",
+    "reason": "理由：图片展示的是采摘后堆放的新鲜桃子，属于新鲜水果本身，无长在植株上、混入其他食材物品、涉及花朵/植株/幼苗或烹饪过的情况。"
+  },
+  "五花肉": {
+    "name": "五花肉",
+    "status": "no_images"
+  },
+  "猪里脊": {
+    "name": "猪里脊",
+    "status": "no_images"
+  },
+  "排骨": {
+    "name": "排骨",
+    "status": "all_failed"
+  },
+  "猪蹄": {
+    "name": "猪蹄",
+    "status": "passed",
+    "reason": "理由：图片中的猪蹄为未经烹饪的生肉，猪蹄部位清晰可辨认，无活体动物、熟制猪蹄或其他食材混入。"
+  },
+  "猪肘": {
+    "name": "猪肘",
+    "status": "all_failed"
+  },
+  "猪肝": {
+    "name": "猪肝",
+    "status": "no_images"
+  },
+  "猪心": {
+    "name": "猪心",
+    "status": "passed",
+    "reason": "理由：图片展示的是装在透明塑料盒内的生猪肉（猪心相关部位），未经烹饪，肉的形态清晰可辨认，无活体动物、熟肉或其他食材混入。"
+  },
+  "猪肚": {
+    "name": "猪肚",
+    "status": "no_images"
+  },
+  "猪大肠": {
+    "name": "猪大肠",
+    "status": "no_images"
+  },
+  "牛腩": {
+    "name": "牛腩",
+    "status": "no_images"
+  },
+  "牛里脊": {
+    "name": "牛里脊",
+    "status": "all_failed"
+  },
+  "牛骨": {
+    "name": "牛骨",
+    "status": "all_failed"
+  },
+  "羊腿": {
+    "name": "羊腿",
+    "status": "no_images"
+  },
+  "羊蝎子": {
+    "name": "羊蝎子",
+    "status": "no_images"
+  },
+  "羊肉卷": {
+    "name": "羊肉卷",
+    "status": "no_images"
+  },
+  "鸡腿": {
+    "name": "鸡腿",
+    "status": "no_images"
+  },
+  "鸡胸": {
+    "name": "鸡胸",
+    "status": "no_images"
+  },
+  "鸡翅": {
+    "name": "鸡翅",
+    "status": "no_images"
+  },
+  "鸡爪": {
+    "name": "鸡爪",
+    "status": "passed",
+    "reason": "理由：图片中的鸡爪为未经烹饪的生肉，形态清晰可辨，无活体动物、熟肉或其他食材混入。"
+  },
+  "鸡架": {
+    "name": "鸡架",
+    "status": "no_images"
+  },
+  "整鸡": {
+    "name": "整鸡",
+    "status": "no_images"
+  },
+  "鸭腿": {
+    "name": "鸭腿",
+    "status": "all_failed"
+  },
+  "鸭脖": {
+    "name": "鸭脖",
+    "status": "all_failed"
+  },
+  "鸭翅": {
+    "name": "鸭翅",
+    "status": "all_failed"
+  },
+  "鸭掌": {
+    "name": "鸭掌",
+    "status": "no_images"
+  },
+  "整鸭": {
+    "name": "整鸭",
+    "status": "no_images"
+  },
+  "鹅肉": {
+    "name": "鹅肉",
+    "status": "no_images"
+  },
+  "鸭蛋": {
+    "name": "鸭蛋",
+    "status": "all_failed"
+  },
+  "皮蛋": {
+    "name": "皮蛋",
+    "status": "all_failed"
+  },
+  "咸鸭蛋": {
+    "name": "咸鸭蛋",
+    "status": "all_failed"
+  },
+  "卤蛋": {
+    "name": "卤蛋",
+    "status": "all_failed"
+  },
+  "茶叶蛋": {
+    "name": "茶叶蛋",
+    "status": "all_failed"
+  },
+  "鲤鱼": {
+    "name": "鲤鱼",
+    "status": "all_failed"
+  },
+  "鲫鱼": {
+    "name": "鲫鱼",
+    "status": "all_failed"
+  },
+  "鲈鱼": {
+    "name": "鲈鱼",
+    "status": "no_images"
+  },
+  "鳕鱼": {
+    "name": "鳕鱼",
+    "status": "no_images"
+  },
+  "带鱼": {
+    "name": "带鱼",
+    "status": "no_results"
+  },
+  "黄花鱼": {
+    "name": "黄花鱼",
+    "status": "passed",
+    "reason": "理由：图片中的鱼为未经烹饪的生鲜黄花鱼，品种特征清晰可辨，无其他食材混入，也非活体观赏或烹饪后状态。"
+  },
+  "三文鱼": {
+    "name": "三文鱼",
+    "status": "all_failed"
+  },
+  "基围虾": {
+    "name": "基围虾",
+    "status": "passed",
+    "reason": "理由：图中展示的是未经烹饪的生鲜基围虾，虾的形态清晰可辨认，无其他食材混入，也非活体观赏或烹饪后菜品。"
+  },
+  "明虾": {
+    "name": "明虾",
+    "status": "passed",
+    "reason": "理由：图片中的明虾为未经烹饪的生鲜状态，形态清晰可辨认，未混入不符合要求的内容（非活体观赏、非烹饪后菜品、无其他违规食材混入）。"
+  },
+  "河虾": {
+    "name": "河虾",
+    "status": "no_images"
+  },
+  "小龙虾": {
+    "name": "小龙虾",
+    "status": "no_images"
+  },
+  "皮皮虾": {
+    "name": "皮皮虾",
+    "status": "no_images"
+  },
+  "大闸蟹": {
+    "name": "大闸蟹",
+    "status": "no_images"
+  },
+  "梭子蟹": {
+    "name": "梭子蟹",
+    "status": "no_images"
+  },
+  "面包蟹": {
+    "name": "面包蟹",
+    "status": "no_images"
+  },
+  "花甲": {
+    "name": "花甲",
+    "status": "no_good"
+  },
+  "蛏子": {
+    "name": "蛏子",
+    "status": "all_failed"
+  },
+  "生蚝": {
+    "name": "生蚝",
+    "status": "no_images"
+  },
+  "扇贝": {
+    "name": "扇贝",
+    "status": "no_images"
+  },
+  "蛤蜊": {
+    "name": "蛤蜊",
+    "status": "no_images"
+  },
+  "蚬子": {
+    "name": "蚬子",
+    "status": "no_images"
+  },
+  "鱿鱼": {
+    "name": "鱿鱼",
+    "status": "no_images"
+  },
+  "墨鱼": {
+    "name": "墨鱼",
+    "status": "no_images"
+  },
+  "章鱼": {
+    "name": "章鱼",
+    "status": "no_images"
+  },
+  "黄鳝": {
+    "name": "黄鳝",
+    "status": "no_images"
+  },
+  "嫩豆腐": {
+    "name": "嫩豆腐",
+    "status": "no_results"
+  },
+  "老豆腐": {
+    "name": "老豆腐",
+    "status": "no_images"
+  },
+  "北豆腐": {
+    "name": "北豆腐",
+    "status": "no_images"
+  },
+  "南豆腐": {
+    "name": "南豆腐",
+    "status": "no_images"
+  },
+  "豆干": {
+    "name": "豆干",
+    "status": "no_images"
+  },
+  "千页豆腐": {
+    "name": "千页豆腐",
+    "status": "no_images"
+  },
+  "腐竹": {
+    "name": "腐竹",
+    "status": "no_images"
+  },
+  "豆皮": {
+    "name": "豆皮",
+    "status": "passed",
+    "reason": "理由：图片中的豆皮处于制作或静置的可食用原始状态，未经过烹饪，也未混入其他食材。"
+  },
+  "豆油皮": {
+    "name": "豆油皮",
+    "status": "no_images"
+  },
+  "豆腐皮": {
+    "name": "豆腐皮",
+    "status": "all_failed"
+  },
+  "油豆腐": {
+    "name": "油豆腐",
+    "status": "passed",
+    "reason": "理由：图片中的油豆腐为可食用的豆制品本身，未混入其他食材，也非烹饪后的菜品。"
+  },
+  "豆泡": {
+    "name": "豆泡",
+    "status": "passed",
+    "reason": "理由：图片中的豆泡为可食用的独立状态，未烹饪成菜品，也无其他食材混入。"
+  },
+  "豆浆": {
+    "name": "豆浆",
+    "status": "no_images"
+  },
+  "豆腐脑": {
+    "name": "豆腐脑",
+    "status": "no_images"
+  },
+  "豆豉": {
+    "name": "豆豉",
+    "status": "passed",
+    "reason": "理由：图片中的豆豉为可食用的原始状态，未呈现烹饪后的菜品形态，也未混入其他食材（大蒜为背景搭配，非豆豉内的食材）。"
+  },
+  "香菇": {
+    "name": "香菇",
+    "status": "no_images"
+  },
+  "金针菇": {
+    "name": "金针菇",
+    "status": "all_failed"
+  },
+  "杏鲍菇": {
+    "name": "杏鲍菇",
+    "status": "passed",
+    "reason": "理由：图中菌菇为切片的杏鲍菇，处于烹饪后的可食用状态，非野外生长状态，且未与其他菌菇混淆。"
+  },
+  "木耳": {
+    "name": "木耳",
+    "status": "no_images"
+  },
+  "银耳": {
+    "name": "银耳",
+    "status": "no_images"
+  },
+  "平菇": {
+    "name": "平菇",
+    "status": "no_images"
+  },
+  "酱油": {
+    "name": "酱油",
+    "status": "no_images"
+  },
+  "生抽": {
+    "name": "生抽",
+    "status": "no_images"
+  },
+  "老抽": {
+    "name": "老抽",
+    "status": "no_images"
+  },
+  "蚝油": {
+    "name": "蚝油",
+    "status": "no_images"
+  },
+  "醋": {
+    "name": "醋",
+    "status": "passed",
+    "reason": "理由：图片展示了液体形态的醋（盛于小碗中），未混入其他食材，且未呈现含醋的菜肴，仅呈现醋本身（及盛装的器具）。"
+  },
+  "料酒": {
+    "name": "料酒",
+    "status": "passed",
+    "reason": "理由：图片展示的是“绍兴料酒（绍兴米酒）”的液体瓶身，属于料酒（调味品）本身的液体形态，未混入其他食材或菜肴。"
+  },
+  "胡椒粉": {
+    "name": "胡椒粉",
+    "status": "no_images"
+  },
+  "花椒": {
+    "name": "花椒",
+    "status": "no_images"
+  },
+  "八角": {
+    "name": "八角",
+    "status": "no_images"
+  },
+  "干辣椒": {
+    "name": "干辣椒",
+    "status": "all_failed"
+  },
+  "麻椒": {
+    "name": "麻椒",
+    "status": "all_failed"
+  },
+  "孜然": {
+    "name": "孜然",
+    "status": "passed",
+    "reason": "理由：图片展示的是完整的孜然籽（孜然的完整香料形态），无其他食材混入，也非含孜然的菜肴，符合“孜然本身形态（完整香料）、无其他食材混入”的要求。"
+  },
+  "五香粉": {
+    "name": "五香粉",
+    "status": "passed",
+    "reason": "理由：图片展示的是装着粉末状五香粉的调料瓶（瓶身标签标注“五香粉”），无菜肴或其他食材混入，呈现的是五香粉本身的粉末形态。"
+  },
+  "豆瓣酱": {
+    "name": "豆瓣酱",
+    "status": "passed",
+    "reason": "理由：图中呈现的是豆瓣酱的酱料形态，无其他食材混入，也非含豆瓣酱的菜肴，符合对该调味品本身形态的要求。"
+  },
+  "番茄酱": {
+    "name": "番茄酱",
+    "status": "passed",
+    "reason": "图片展示了瓶装的番茄酱（酱料形态），未混入其他食材，也非含番茄酱的菜肴，满足审核要求。"
+  },
+  "芝麻酱": {
+    "name": "芝麻酱",
+    "status": "passed",
+    "reason": "图片中的物质为纯芝麻酱（酱料形态），无其他食材混入，也非含芝麻酱的菜肴，呈现的是该调味品本身的形态。"
+  },
+  "香油": {
+    "name": "香油",
+    "status": "no_images"
+  },
+  "辣椒油": {
+    "name": "辣椒油",
+    "status": "no_images"
+  },
+  "糯米": {
+    "name": "糯米",
+    "status": "passed",
+    "reason": "理由：图片中的糯米呈干燥、未烹饪的原始状态，未经过烹饪加工，符合主食/粮食类糯米原始干燥状态的审核要求。"
+  },
+  "面条": {
+    "name": "面条",
+    "status": "no_images"
+  },
+  "面粉": {
+    "name": "面粉",
+    "status": "passed",
+    "reason": "理由：图片中的面粉处于未烹饪的原始干燥状态（虽混入鸡蛋、液体，但面粉本身未经过烹饪，属于食材加工前的原料状态）。"
+  },
+  "红薯": {
+    "name": "红薯",
+    "status": "no_images"
+  },
+  "香菜": {
+    "name": "香菜",
+    "status": "all_failed"
+  },
+  "包菜": {
+    "name": "包菜",
+    "status": "no_images"
+  },
+  "菜心": {
+    "name": "菜心",
+    "status": "no_images"
+  },
+  "蒜苔": {
+    "name": "蒜苔",
+    "status": "no_images"
+  },
+  "青蒜": {
+    "name": "青蒜",
+    "status": "no_images"
+  },
+  "泡椒": {
+    "name": "泡椒",
+    "status": "no_images"
+  },
+  "剁椒": {
+    "name": "剁椒",
+    "status": "no_images"
+  },
+  "酸萝卜": {
+    "name": "酸萝卜",
+    "status": "all_failed"
+  },
+  "马蹄": {
+    "name": "马蹄",
+    "status": "no_images"
+  },
+  "冬笋": {
+    "name": "冬笋",
+    "status": "no_images"
+  },
+  "蒲菜": {
+    "name": "蒲菜",
+    "status": "no_images"
+  },
+  "梅干菜": {
+    "name": "梅干菜",
+    "status": "no_results"
+  },
+  "枸杞": {
+    "name": "枸杞",
+    "status": "no_images"
+  },
+  "牛肉": {
+    "name": "牛肉",
+    "status": "passed",
+    "reason": "理由：图中为未经烹饪的生牛肉切片，肉质形态清晰可辨，无活体动物、熟肉及其他食材混入。"
+  },
+  "牛肉末": {
+    "name": "牛肉末",
+    "status": "passed",
+    "reason": "理由：图片展示的是未经烹饪的生牛肉末，形态清晰可辨，未混入其他食材，满足生鲜生牛肉末的审核要求。"
+  },
+  "牛舌": {
+    "name": "牛舌",
+    "status": "no_images"
+  },
+  "牛肚": {
+    "name": "牛肚",
+    "status": "no_images"
+  },
+  "牛蛙": {
+    "name": "牛蛙",
+    "status": "no_images"
+  },
+  "猪腰": {
+    "name": "猪腰",
+    "status": "no_images"
+  },
+  "午餐肉": {
+    "name": "午餐肉",
+    "status": "all_failed"
+  },
+  "腊肠": {
+    "name": "腊肠",
+    "status": "passed",
+    "reason": "理由：图片中的腊肠为未经烹饪的生肉制品，清晰可辨认，无活体动物、熟肉或其他食材混入。"
+  },
+  "腊肉": {
+    "name": "腊肉",
+    "status": "no_images"
+  },
+  "腊鱼": {
+    "name": "腊鱼",
+    "status": "no_images"
+  },
+  "鸡肉": {
+    "name": "鸡肉",
+    "status": "passed",
+    "reason": "理由：图片展示了未经烹饪的生鸡肉，肉品清晰可辨认，无活体动物、熟肉或其他食材混入。"
+  },
+  "咸肉": {
+    "name": "咸肉",
+    "status": "passed",
+    "reason": "理由：图片展示的是包装好的未经烹饪的生咸肉，肉的部位清晰可辨，无活体动物、熟肉或其他食材混入。"
+  },
+  "三黄鸡": {
+    "name": "三黄鸡",
+    "status": "no_images"
+  },
+  "鸽子": {
+    "name": "鸽子",
+    "status": "no_images"
+  },
+  "甲鱼": {
+    "name": "甲鱼",
+    "status": "no_images"
+  },
+  "鸭血": {
+    "name": "鸭血",
+    "status": "no_images"
+  },
+  "毛肚": {
+    "name": "毛肚",
+    "status": "no_results"
+  },
+  "黄喉": {
+    "name": "黄喉",
+    "status": "no_images"
+  },
+  "鸡胗": {
+    "name": "鸡胗",
+    "status": "no_images"
+  },
+  "鸡心": {
+    "name": "鸡心",
+    "status": "no_images"
+  },
+  "鸡肝": {
+    "name": "鸡肝",
+    "status": "no_images"
+  },
+  "猪血丸子": {
+    "name": "猪血丸子",
+    "status": "no_results"
+  },
+  "蛋饺": {
+    "name": "蛋饺",
+    "status": "no_results"
+  },
+  "鳜鱼": {
+    "name": "鳜鱼",
+    "status": "no_images"
+  },
+  "银鱼": {
+    "name": "银鱼",
+    "status": "no_images"
+  },
+  "鱼头": {
+    "name": "鱼头",
+    "status": "no_images"
+  },
+  "鲍鱼": {
+    "name": "鲍鱼",
+    "status": "no_images"
+  },
+  "干贝": {
+    "name": "干贝",
+    "status": "no_results"
+  },
+  "香螺": {
+    "name": "香螺",
+    "status": "passed",
+    "reason": "理由：图片展示的是未经烹饪的香螺（壳体），品种特征清晰可辨，无烹饪后状态或其他食材混入。"
+  },
+  "海蚌": {
+    "name": "海蚌",
+    "status": "no_images"
+  },
+  "海参": {
+    "name": "海参",
+    "status": "no_images"
+  },
+  "香干": {
+    "name": "香干",
+    "status": "no_images"
+  },
+  "蛋清": {
+    "name": "蛋清",
+    "status": "no_images"
+  },
+  "米饭": {
+    "name": "米饭",
+    "status": "all_failed"
+  },
+  "粉丝": {
+    "name": "粉丝",
+    "status": "no_images"
+  },
+  "淀粉": {
+    "name": "淀粉",
+    "status": "no_images"
+  },
+  "沙姜": {
+    "name": "沙姜",
+    "status": "no_images"
+  },
+  "芥末": {
+    "name": "芥末",
+    "status": "no_results"
+  },
+  "松子": {
+    "name": "松子",
+    "status": "passed",
+    "reason": "理由：图片展示了完整的松子及剥开的松子外壳、果仁，为松子本身的形态，未混入其他食材，也非含松子的菜肴/食物。"
+  },
+  "龙井茶叶": {
+    "name": "龙井茶叶",
+    "status": "passed",
+    "reason": "理由：图片展示的是龙井茶叶（鲜叶）的本身形态，未混入其他食材，也非含茶叶的菜肴。"
+  },
+  "荷叶": {
+    "name": "荷叶",
+    "status": "no_images"
+  },
+  "蒸肉粉": {
+    "name": "蒸肉粉",
+    "status": "no_images"
+  },
+  "甜辣酱": {
+    "name": "甜辣酱",
+    "status": "passed",
+    "reason": "理由：图片展示的是装在容器中的甜辣酱酱料本身，无其他食材或含该调味品的菜肴混入，呈现的是甜辣酱的酱料形态。"
+  },
+  "红糟": {
+    "name": "红糟",
+    "status": "no_results"
+  },
+  "沙茶酱": {
+    "name": "沙茶酱",
+    "status": "passed",
+    "reason": "理由：图片展示的是罐装沙茶酱的酱料形态，未混入其他食材，也非含沙茶酱的菜肴，属于该调味品本身的形态。"
+  },
+  "蜂蜜": {
+    "name": "蜂蜜",
+    "status": "no_images"
+  },
+  "白芝麻": {
+    "name": "白芝麻",
+    "status": "no_images"
+  },
+  "鸡汤": {
+    "name": "鸡汤",
+    "status": "all_failed"
+  },
+  "鸭肉": {
+    "name": "鸭肉",
+    "status": "passed",
+    "reason": "理由：图片展示的是未经烹饪的生鸭肉块，肉的部位清晰可辨认，无活体动物、熟肉或其他食材混入。"
+  },
+  "羊肉": {
+    "name": "羊肉",
+    "status": "passed",
+    "reason": "理由：图片展示的是未经烹饪的生羊肉（带骨羊胴体），部位清晰可辨，无活体、熟肉或其他食材混入。"
+  },
+  "螃蟹": {
+    "name": "螃蟹",
+    "status": "passed",
+    "reason": "理由：图片中的螃蟹为未经烹饪的生鲜状态（品种清晰可辨），无烹饪后菜品特征，未混入其他食材，也非活体观赏类展示状态。"
+  },
+  "贝类": {
+    "name": "贝类",
+    "status": "all_failed"
+  }
+}
